@@ -35,7 +35,7 @@
 		
 		<div class="col-sm-9 " style="font-size: 10px ">
 		  <small>版版權所有 © 1996-2017. All rights reserved. 非經授權禁止轉載.<br>
-				 Website design, development and support: yanina.kalinicheva@gmail.com<br> 
+				 Website design, development and support: yanina.kalinicheva@gmail.com, bigyo<br> 
 				 </small>
 		</div>
 
