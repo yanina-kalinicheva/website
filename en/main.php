@@ -16,6 +16,15 @@
 
 <!doctype html>
 <html class="no-js" lang="en">
+<?php 
+    $en_href = '../en/main.php';    
+    $ru_href = '../ru/main.php';
+    $ch_href = '../ch/main.php'; 
+    $my_title="<cms:show k_page_title />";
+    $my_content="<cms:show en_content />";
+    $my_page_link="<cms:show k_page_link />"."&l=en"; 
+    $FolderOut="../"
+?>
 <cms:set my_lang ='en' 'global' />
 <head>
     <meta charset="utf-8">
@@ -130,7 +139,7 @@
         </header>
         <div class="row">
             <div class="col-md-6">
-                <cms:embed 'news_block.html' />
+                <?php include('../couch/snippets/news_block.php');?>
                 <a href="#"><h5 style="color:blue;" align=center>More news here</h5></a>
             </div>
             <!-- / .col-md-6 -->

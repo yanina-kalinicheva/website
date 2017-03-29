@@ -133,7 +133,7 @@
         <div class="row">
             <div class="col-md-6">
                 <?php include('../couch/snippets/news_block.php');?>
-                <a href="news.php"><h5 style="color:blue;" align=center>More news here</h5></a>
+                <a href="news.php"><h5 style="color:blue;" align=center>更多新聞</h5></a>
             </div>
             <!-- / .col-md-6 -->
             <div class="col-md-6">
