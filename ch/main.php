@@ -49,6 +49,11 @@
     <link rel="stylesheet" href="../assets/styles/responsive.css">
     <!-- JS -->
     <script src="../assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script language="javascript">
+        function popUp() {
+            alert("我是彈出視窗!");
+        }
+    </script>
 </head>
 
 <body id="page-top">
@@ -59,6 +64,10 @@
     <div class="preloader">
         <img src="../assets/images/loader.svg" alt="Loading...">
     </div>
+
+    <script type="text/javascript">
+        popUp();
+    </script>
     <!-- ========== Navigation ========== -->
 		
     <?php include('./../couch/snippets/ch_header.php'); ?>

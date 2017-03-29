@@ -41,6 +41,11 @@
     <link rel="stylesheet" href="../assets/styles/responsive.css">
     <!-- JS -->
     <script src="../assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script language="javascript">
+        function popUp() {
+            alert("Я во всплывающем окне!");
+        }
+    </script>
 </head>
 
 <body id="page-top">
@@ -51,6 +56,10 @@
     <div class="preloader">
         <img src="../assets/images/loader.svg" alt="Loading...">
     </div>
+
+    <script type="text/javascript">
+        popUp();
+    </script>
     <!-- ========== Navigation ========== -->
     
 	<cms:embed 'ru_header.html' />
