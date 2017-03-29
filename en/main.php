@@ -71,7 +71,7 @@
 
     <script type="text/javascript">
         popUp();
-    </script>>
+    </script>
     
     <!-- ========== Navigation ========== -->
 	
