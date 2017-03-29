@@ -44,6 +44,11 @@
     <script src="../assets/js/vendor/modernizr-2.8.3.min.js"></script>
     <!-- set myLang variable-->
     <script src="../assets/js/myLang.js"></script>
+    <script language="javascript">
+        function popUp() {
+            alert("I am an alert box!");
+        }
+    </script>
 </head>
 
 <body id="page-top">
@@ -54,6 +59,11 @@
     <div class="preloader">
         <img src="../assets/images/loader.svg" alt="Loading...">
     </div>
+
+    <script type="text/javascript">
+        popUp();
+    </script>>
+    
     <!-- ========== Navigation ========== -->
 	
     <cms:embed 'en_header.html' />
