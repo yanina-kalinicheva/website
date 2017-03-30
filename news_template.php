@@ -41,8 +41,8 @@
             $my_title="<cms:show ru_title />";
             $my_content="<cms:show ru_content />";
             $my_page_link="<cms:show k_page_link />"."&l=ru";
-            $my_navigator="<cms:embed 'ru_header.php' />";
-            $my_footer="<cms:embed 'ru_footer.php' />";
+            $my_navigator='couch/snippets/ru_header.php';
+            $my_footer='couch/snippets/ru_footer.html';
             $langFolder="ru/";
             break;
 
@@ -51,8 +51,8 @@
             $my_title="<cms:show k_page_title />";
             $my_content="<cms:show en_content />";
             $my_page_link="<cms:show k_page_link />"."&l=en";
-            $my_navigator="<cms:embed 'en_header.php' />";
-            $my_footer="<cms:embed 'en_footer.php' />";
+            $my_navigator='couch/snippets/en_header.php';
+            $my_footer='couch/snippets/en_footer.html';
             $langFolder="en/";
             break;
     }
@@ -144,14 +144,12 @@
                 <!-- / .blog-post-single -->
                 <!-- Post Navigation -->
                 <div class="row">
-                    <nav class="blog-post-nav">
-                        <cms:pages start_on=k_page_date order='asc' limit='1' offset='1'>
-                            <a href="<?php echo $my_page_link; ?>" class="next-btn">Next post</a>
-                        </cms:pages>
-                        <cms:pages stop_before=k_page_date limit='1'>
-                            <a href="<?php echo $my_page_link; ?>" class="prev-btn">Prev post</a>
-                        </cms:pages>
-                    </nav>
+                    <cms:pages start_on=k_page_date order='asc' limit='1' offset='1'>
+                        <a href="<?php echo $my_page_link; ?>" class="next-btn">Next post</a>
+                    </cms:pages>
+                    <cms:pages stop_before=k_page_date limit='1'>
+                        <a href="<?php echo $my_page_link; ?>" class="prev-btn">Prev post</a>
+                    </cms:pages>
                 </div>
             </div>
             <!-- / .col-md-8 -->
