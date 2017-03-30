@@ -9,9 +9,13 @@
 <html class="no-js" lang="en">
 <cms:set my_lang='en' 'global' />
 <?php 
+    $en_href = '../en/news.php';    
+    $ru_href = '../ru/news.php';
+    $ch_href = '../ch/news.php'; 
     $my_title="<cms:show k_page_title />";
     $my_content="<cms:show en_content />";
-    $my_page_link="<cms:show k_page_link />"."&l=en";
+    $my_page_link="<cms:show k_page_link />"."&l=en"; 
+    $FolderOut="../"
 ?>
 
     <head>
