@@ -154,17 +154,17 @@
                 <form action="../assets/contact-form/contact-form.php" method="POST" id="contact-form-1" class="form-ajax">
                   <div class="col-md-offset-2 col-md-4 wow fadeInUp" data-wow-duration="1s">
 				  
-				    <!-- Subject -->
-					<div class="form-group">
-						<select class="form-control" id="select-form">
-						<option>Visa</option>
-						<option>Legalization</option>
-						<option>Education</option>
-						<option>Economy</option>
-						<option>Other</option>
-						</select>
-						<label for="select-form">Select a subject</label>
-					</div>
+      				    <!-- Subject -->
+        					<div class="form-group">
+        						<select class="form-control" id="select-form" name="subject-option">
+        						<option value="Visa">Visa</option>
+        						<option value="Legalization">Legalization</option>
+        						<option value="Education">Education</option>
+        						<option value="Economy">Economy</option>
+        						<option value="Other">Other</option>
+        						</select>
+        						<label for="select-form">Select a subject</label>
+        					</div>
 
                     <!-- Name -->
                     <div class="form-group">
@@ -203,7 +203,6 @@
             </div><!-- / .container -->
           </div><!-- / .contact-wrapper -->
         </section><!-- / .contact-1 -->
-
 
 
 		<!-- ========== Footer Widgets ========== -->
