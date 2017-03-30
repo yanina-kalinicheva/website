@@ -75,7 +75,7 @@
     
     <!-- ========== Navigation ========== -->
 	
-    <cms:embed 'en_header.html' />
+    <?php include('./../couch/snippets/en_header.php'); ?>
 	
     <!-- ========== Header/Page Title - Large Dark Parallax ========== -->
     <header class="page-title pt-large pt-light pt-parallax pt-plax-lg-light"

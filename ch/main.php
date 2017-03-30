@@ -1,17 +1,16 @@
 <?php require_once( '../couch/cms.php' ); ?>
 <cms:template title='莫北協駐台代表處'>
-	<cms:editable name='header_image' label='Header Image' desc='Upload header image here' type='image' />
-	<cms:editable name='title' label='Title' desc='Enter title to the page' type='text'>Hot topics</cms:editable>
-	<cms:editable name='subtitle' label='Subtitle' desc='Enter subtitle under the page title' type='text'>You may find this useful</cms:editable>
-	<cms:editable name='topic1_title' label='Topic 1 title' desc='Enter title of the first topic' type='text' />
-	<cms:editable name='topic1_content' label='Topic 1 content' desc='Enter short description of first topic' type='text' />
-	<cms:editable name='topic2_title' label='Topic 2 title' desc='Enter title of the second topic' type='text' />
-	<cms:editable name='topic2_content' label='Topic 2 content' desc='Enter short description of second topic' type='text' />
-	<cms:editable name='topic3_title' label='Topic 3 title' desc='Enter title of the third topic' type='text' />
-	<cms:editable name='topic3_content' label='Topic 3 content' desc='Enter short description of third topic' type='text' />
-	<cms:editable name='topic4_title' label='Topic 4 title' desc='Enter title of the fourth topic' type='text' />
-	<cms:editable name='topic4_content' label='Topic 4 content' desc='Enter short description of fourth topic' type='text' />
-
+    <cms:editable name='header_image' label='Header Image' desc='Upload header image here' type='image' />
+    <cms:editable name='title' label='Title' desc='Enter title to the page' type='text'>Hot topics</cms:editable>
+    <cms:editable name='subtitle' label='Subtitle' desc='Enter subtitle under the page title' type='text'>You may find this useful</cms:editable>
+    <cms:editable name='topic1_title' label='Topic 1 title' desc='Enter title of the first topic' type='text' />
+    <cms:editable name='topic1_content' label='Topic 1 content' desc='Enter short description of first topic' type='text' />
+    <cms:editable name='topic2_title' label='Topic 2 title' desc='Enter title of the second topic' type='text' />
+    <cms:editable name='topic2_content' label='Topic 2 content' desc='Enter short description of second topic' type='text' />
+    <cms:editable name='topic3_title' label='Topic 3 title' desc='Enter title of the third topic' type='text' />
+    <cms:editable name='topic3_content' label='Topic 3 content' desc='Enter short description of third topic' type='text' />
+    <cms:editable name='topic4_title' label='Topic 4 title' desc='Enter title of the fourth topic' type='text' />
+    <cms:editable name='topic4_content' label='Topic 4 content' desc='Enter short description of fourth topic' type='text' />
 </cms:template>
 
 <!doctype html>
@@ -50,8 +49,13 @@
     <!-- JS -->
     <script src="../assets/js/vendor/modernizr-2.8.3.min.js"></script>
     <script language="javascript">
-        function popUp() {
-            alert("我是彈出視窗!");
+        var news = document.getElementById('popUp').textContent;
+        if (news.length) {
+            popUp(news);
+        }
+
+        function popUp(news) {
+            alert(news);
         }
     </script>
 </head>
@@ -65,9 +69,6 @@
         <img src="../assets/images/loader.svg" alt="Loading...">
     </div>
 
-    <script type="text/javascript">
-        popUp();
-    </script>
     <!-- ========== Navigation ========== -->
 		
     <?php include('./../couch/snippets/ch_header.php'); ?>
