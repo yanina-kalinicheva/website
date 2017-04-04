@@ -144,11 +144,11 @@
                 <!-- / .blog-post-single -->
                 <!-- Post Navigation -->
                 <div class="row">
-                    <cms:pages start_on=k_page_date order='asc' limit='1' offset='1'>
-                        <a href="<?php echo $my_page_link; ?>" class="next-btn">Next post</a>
-                    </cms:pages>
                     <cms:pages stop_before=k_page_date limit='1'>
-                        <a href="<?php echo $my_page_link; ?>" class="prev-btn">Prev post</a>
+                        <a href="<?php echo $my_page_link; ?>" class="prev-btn" style="float:left;">Prev post</a>
+                    </cms:pages>
+                    <cms:pages start_on=k_page_date order='asc' limit='1' offset='1'>
+                        <a href="<?php echo $my_page_link; ?>" class="next-btn" style="float:right;">Next post</a>
                     </cms:pages>
                 </div>
             </div>
@@ -164,25 +164,25 @@
     <?php include($my_footer); ?>
     <!-- / .footer-widgets -->
     <!-- ========== Scripts ========== -->
-    <script src="./assets/js/vendor/jquery-2.1.4.min.js"></script>
-    <script src="./assets/js/vendor/google-fonts.js"></script>
-    <script src="./assets/js/vendor/jquery.easing.js"></script>
-    <script src="./assets/js/vendor/jquery.waypoints.min.js"></script>
-    <script src="./assets/js/vendor/bootstrap.min.js"></script>
-    <script src="./assets/js/vendor/bootstrap-hover-dropdown.min.js"></script>
-    <script src="./assets/js/vendor/smoothscroll.js"></script>
-    <script src="./assets/js/vendor/jquery.localScroll.min.js"></script>
-    <script src="./assets/js/vendor/jquery.scrollTo.min.js"></script>
-    <script src="./assets/js/vendor/jquery.stellar.min.js"></script>
-    <script src="./assets/js/vendor/jquery.parallax.js"></script>
-    <script src="./assets/js/vendor/slick.min.js"></script>
-    <script src="./assets/js/vendor/jquery.easypiechart.min.js"></script>
-    <script src="./assets/js/vendor/countup.min.js"></script>
-    <script src="./assets/js/vendor/isotope.min.js"></script>
-    <script src="./assets/js/vendor/jquery.magnific-popup.min.js"></script>
-    <script src="./assets/js/vendor/wow.min.js"></script>
+    <script src="./assets/js/vendor/jquery-2.1.4.min.js "></script>
+    <script src="./assets/js/vendor/google-fonts.js "></script>
+    <script src="./assets/js/vendor/jquery.easing.js "></script>
+    <script src="./assets/js/vendor/jquery.waypoints.min.js "></script>
+    <script src="./assets/js/vendor/bootstrap.min.js "></script>
+    <script src="./assets/js/vendor/bootstrap-hover-dropdown.min.js "></script>
+    <script src="./assets/js/vendor/smoothscroll.js "></script>
+    <script src="./assets/js/vendor/jquery.localScroll.min.js "></script>
+    <script src="./assets/js/vendor/jquery.scrollTo.min.js "></script>
+    <script src="./assets/js/vendor/jquery.stellar.min.js "></script>
+    <script src="./assets/js/vendor/jquery.parallax.js "></script>
+    <script src="./assets/js/vendor/slick.min.js "></script>
+    <script src="./assets/js/vendor/jquery.easypiechart.min.js "></script>
+    <script src="./assets/js/vendor/countup.min.js "></script>
+    <script src="./assets/js/vendor/isotope.min.js "></script>
+    <script src="./assets/js/vendor/jquery.magnific-popup.min.js "></script>
+    <script src="./assets/js/vendor/wow.min.js "></script>
     <!-- Definity JS -->
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main.js "></script>
 </body>
 
 </html>
