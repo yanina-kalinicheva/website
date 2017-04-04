@@ -49,11 +49,6 @@
     <link rel="stylesheet" href="../assets/styles/responsive.css">
     <!-- JS -->
     <script src="../assets/js/vendor/modernizr-2.8.3.min.js"></script>
-    <script language="javascript">
-        function popUp(news) {
-            alert(news);
-        }
-    </script>
 </head>
 
 <body id="page-top">
