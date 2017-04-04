@@ -7,6 +7,14 @@
 
 <!doctype html>
 <html class="no-js" lang="en">
+<?php 
+    $en_href = '../en/russia_and_taiwan.php';    
+    $ch_href = '../ch/russia_and_taiwan.php';
+    $my_title="<cms:show ru_title />";
+    $my_content="<cms:show ru_content />";
+    $my_page_link="<cms:show k_page_link />"."&l=ru"; 
+    $FolderOut="../"
+?>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -54,7 +62,7 @@
 
         <!-- ========== Navigation ========== -->
 
-        <cms:embed 'ru_header.html' />
+        <?php include('./../couch/snippets/ru_header.php'); ?>
 		
         <!-- ========== Page Title ========== -->
 		

@@ -12,6 +12,14 @@
 </cms:template>
 
 <!doctype html>
+<?php 
+    $en_href = '../en/contacts.php';    
+    $ch_href = '../ch/contacts.php';
+    $my_title="<cms:show ru_title />";
+    $my_content="<cms:show ru_content />";
+    $my_page_link="<cms:show k_page_link />"."&l=ru"; 
+    $FolderOut="../"
+?>
 <html class="no-js" lang="en">
     <head>
         <meta charset="utf-8">
@@ -58,7 +66,7 @@
 
         <!-- ========== Navigation ========== -->
 
-        <cms:embed 'ru_header.html' />
+        <?php include('./../couch/snippets/ru_header.php'); ?>
 
         <!-- ========== Page Title ========== -->
 		

@@ -16,18 +16,15 @@
                     <!-- Home -->
                     <li><a style="color:black;" href=<?php echo $langFolder. 'main.php'; ?>> 首頁<span class="sr-only"></span></a></li>
                     <!-- / Home -->
-					
                     <!-- News -->
                     <li><a style="color:black;" href=<?php echo $langFolder. 'news.php'; ?>> 新聞<span class="sr-only"></span></a></li>
                     <!-- / News -->
-					
                     <!-- About -->
                     <li><a style="color:black;" href=<?php echo $langFolder. 'about.php'; ?>> 關於代表處<span class="sr-only"></span></a></li>
                     <!-- / About -->
-					
                     <!-- Russia & Taiwan -->
                     <li class="dropdown">
-                        <a style="color:black;" href=<?php echo $langFolder.'russia_and_taiwan.php'; ?> class="dropdown-toggle" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">俄羅斯和台灣<span class="caret"></span></a>
+                        <a style="color:black;" href=<?php echo $langFolder. 'russia_and_taiwan.php'; ?> class="dropdown-toggle" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">俄羅斯和台灣<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <div class="row">
                                 <!-- Culture -->
@@ -48,11 +45,10 @@
                         <!-- / .dropdown-menu -->
                     </li>
                     <!-- / Russia & Taiwan -->
-					
                     <!-- Consular Information -->
                     <li class="dropdown">
-                        <a style="color:black;" href=<?php echo $langFolder.'consular.php'; ?> class="dropdown-toggle" data-hover="dropdown" 
-						data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">領事問題<span class="caret"></span></a>
+                        <a style="color:black;" href=<?php echo $langFolder. 'consular.php'; ?> class="dropdown-toggle" data-hover="dropdown" 
+                        data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">領事問題<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <div class="row">
                                 <!-- Russian visa -->
@@ -77,11 +73,10 @@
                         <!-- / .dropdown-menu -->
                     </li>
                     <!-- / Consular Information -->
-					
                     <!-- Additional Information -->
                     <li class="dropdown">
-                        <a style="color:black;" href=<?php echo $langFolder.'info.php'; ?> class="dropdown-toggle" data-hover="dropdown" data-delay="350" role="button" 
-						aria-haspopup="true" aria-expanded="false">其他資訊<span class="caret"></span></a>
+                        <a style="color:black;" href=<?php echo $langFolder. 'info.php'; ?> class="dropdown-toggle" data-hover="dropdown" data-delay="350" role="button" 
+                        aria-haspopup="true" aria-expanded="false">其他資訊<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <div class="row">
                                 <!-- Additional Information -->
@@ -97,9 +92,8 @@
                         <!-- / .dropdown-menu -->
                     </li>
                     <!-- / Additional Information -->
-					
                     <!-- Contacts -->
-                    <li><a style="color:black;" href=<?php echo $langFolder.'contacts.php'; ?>>聯絡方式<span class="sr-only"></span></a></li>
+                    <li><a style="color:black;" href=<?php echo $langFolder. 'contacts.php'; ?>>聯絡方式<span class="sr-only"></span></a></li>
                     </li>
                     <!-- / Contacts -->
                 </ul>
@@ -109,17 +103,39 @@
             <div class="col-xs-3" style="font-size: 14px;">
                 <ul class="nav navbar-nav navbar-right">
                     <!-- FAQ -->
-                    <li><a style="color:black;" href=<?php echo $langFolder.'faq.php'; ?>>問題集<span class="sr-only"></span></a></li>
-                    </li>
+                    <li><a style="color:black;" href=<?php echo $langFolder. 'faq.php'; ?>>問題集<span class="sr-only"></span></a></li>
                     <!-- / FAQ -->
                     <!-- Search -->
+                    <style>
+                    .gsc-search-button,
+                    .gsc-input-box,
+                    .gsc-input,
+                    .gs_tti50 {
+                        -webkit-box-sizing: initial;
+                        -moz-box-sizing: initial;
+                        box-sizing: initial;
+                    }
+                    
+                    .gsc-search-button {
+                        vertical-align: middle;
+                    }
+                    </style>
                     <li class="dropdown">
                         <a style="color:black;" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search"></i> 搜尋</a>
-                        <ul class="dropdown-menu search-dropdown">
+                        <ul class="dropdown-menu search-dropdown" style="width:325px">
                             <li>
-                                <form action="post">
-                                    <input type="search" class="form-control" placeholder="Search...">
-                                </form>
+                                <script>
+                                (function() {
+                                    var cx = '005309254330236089334:qpgizmgtvy0';
+                                    var gcse = document.createElement('script');
+                                    gcse.type = 'text/javascript';
+                                    gcse.async = true;
+                                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                                    var s = document.getElementsByTagName('script')[0];
+                                    s.parentNode.insertBefore(gcse, s);
+                                })();
+                                </script>
+                                <gcse:search class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"></gcse:search>
                             </li>
                         </ul>
                     </li>

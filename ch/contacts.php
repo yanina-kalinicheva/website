@@ -86,6 +86,7 @@
                 <ol class="col-sm-7 text-right breadcrumb">
                   <li><a style="font-size:130%;" href="main.php">主頁</a></li>
                   <li style="font-size:130%;" class="active">聯絡方式</li>
+                  
                 </ol>
 
               </div>

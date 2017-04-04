@@ -9,9 +9,12 @@
 <html class="no-js" lang="en">
 <cms:set my_lang='en' 'global' />
 <?php 
+    $en_href = '../en/news.php';    
+    $ch_href = '../ch/news.php';
     $my_title="<cms:show ru_title />";
     $my_content="<cms:show ru_content />";
-    $my_page_link="<cms:show k_page_link />"."&l=ru";
+    $my_page_link="<cms:show k_page_link />"."&l=ru"; 
+    $FolderOut="../"
 ?>
 
     <head>
@@ -51,7 +54,7 @@
         </div>
         <!-- ========== Navigation ========== -->
         
-		<cms:embed 'ru_header.html' />
+		<?php include('./../couch/snippets/ru_header.php'); ?>
 		
         <!-- ========== Page Title ========== -->
         

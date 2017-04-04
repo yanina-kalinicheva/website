@@ -8,7 +8,7 @@
 </cms:template>
 
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="ch">
 <?php 
     $en_href = '../en/faq.php';    
     $ru_href = '../ru/faq.php';
