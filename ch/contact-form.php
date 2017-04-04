@@ -6,7 +6,7 @@ if(isset($_POST['email'])) {
  
     // ADD YOUR EMAIL WHERE YOU WANT TO RECIEVE THE MESSAGES
  
-    $email_to = "yanina.kalinicheva@gmail.com";
+    //$email_to = "yanina.kalinicheva@gmail.com";
 
     $subject = $_POST['subject-option'];
  
@@ -119,8 +119,28 @@ $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
  
 'X-Mailer: PHP/' . phpversion();
- 
-mail($email_to, $email_subject, $email_message, $headers);  
+
+if ($subject == "Visa") {
+
+  mail("b02902060@ntu.edu.tw", $email_subject, $email_message, $headers);  
+
+} elseif ($subject == "Legalization") {
+
+  mail("bxj840124@gmail.com", $email_subject, $email_message, $headers);  
+
+} elseif ($subject == "Education") {
+
+  mail("bxj840124@gmail.com", $email_subject, $email_message, $headers);  
+
+} elseif ($subject == "Economy") {
+
+  mail("bxj840124@gmail.com", $email_subject, $email_message, $headers);  
+  
+} elseif ($subject == "Other") {
+
+  mail("bxj840124@gmail.com", $email_subject, $email_message, $headers);  
+  
+}
  ?>
 
  <div class="alert alert-success alert-dismissible wow fadeInUp" role="alert">
