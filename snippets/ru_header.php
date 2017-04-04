@@ -24,7 +24,7 @@
                     <!-- / About -->
                     <!-- Russia & Taiwan -->
                     <li class="dropdown">
-                        <a style="color:black;" href=<?php echo $langFolder. 'russia_and_taiwan.php'; ?> class="dropdown-toggle" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">
+                        <a style="color:black;" href=<?php echo $langFolder. 'russia_and_taiwan.php'; ?> class="dropdown-toggle" data-toggle="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">
 		  Россия и <br>Тайвань<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <div class="row">
@@ -32,13 +32,13 @@
                                 <div class="col-lg-6 mb-sm-30">
                                     <li class="dropdown-header">Экономическое сотрудничество</li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="#" target="_blank">Мероприятия</a></li>
+                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">Мероприятия</a></li>
                                 </div>
                                 <!-- Education -->
                                 <div class="col-lg-6 mb-sm-30">
                                     <li class="dropdown-header">Культура и образование</li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="#" target="_blank">Обучение в России</a></li>
+                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">Обучение в России</a></li>
                                 </div>
                             </div>
                             <!-- / .row -->
@@ -48,7 +48,7 @@
                     <!-- / Russia & Taiwan -->
                     <!-- Consular Information -->
                     <li class="dropdown">
-                        <a style="color:black;" href=<?php echo $langFolder. 'consular.php'; ?> class="dropdown-toggle" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">
+                        <a style="color:black;" href=<?php echo $langFolder. 'consular.php'; ?> class="dropdown-toggle" data-toggle="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">
 		  Консульские<br>Вопросы<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <div class="row">
@@ -56,17 +56,17 @@
                                 <div class="col-lg-6 mb-sm-30">
                                     <li class="dropdown-header">Российская Виза</li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="blog/mtc_text_page_example.html" target="_blank">Important Info</a></li>
-                                    <li><a href="blog/mtc_text_page_example.html" target="_blank">General rules</a></li>
-                                    <li><a href="blog/mtc_text_page_example.html" target="_blank">Visa fee</a></li>
-                                    <li><a href="blog/mtc_text_page_example.html" target="_blank">Visa application</a></li>
+                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">Important Info</a></li>
+                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">General rules</a></li>
+                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">Visa fee</a></li>
+                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">Visa application</a></li>
                                 </div>
                                 <!-- Legalization -->
                                 <div class="col-lg-6 mb-sm-30">
                                     <li class="dropdown-header">Легализация</li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="blog/mtc_text_page_example.html" target="_blank">Legalize <br>documents</a></li>
-                                    <li><a href="blog/mtc_text_page_example.html" target="_blank">How to</a></li>
+                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">Legalize <br>documents</a></li>
+                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">How to</a></li>
                                 </div>
                             </div>
                             <!-- / .row -->
@@ -76,7 +76,7 @@
                     <!-- / Consular Information -->
                     <!-- Additional Information -->
                     <li class="dropdown">
-                        <a style="color:black;" href=<?php echo $langFolder. 'info.php'; ?> class="dropdown-toggle"  data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">
+                        <a style="color:black;" href=<?php echo $langFolder. 'info.php'; ?> class="dropdown-toggle"  data-toggle="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">
 		  Полезная<br>Информация<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <div class="row">
@@ -84,7 +84,7 @@
                                 <div class="col-lg-6 mb-sm-30">
                                     <li class="dropdown-header">Additional Information</li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="#" target="_blank">Links</a></li>
+                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">Links</a></li>
                                 </div>
                             </div>
                             <!-- / .row -->
