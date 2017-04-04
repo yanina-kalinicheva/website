@@ -62,8 +62,7 @@
 
 
         <!-- ========== Navigation ========== -->
-		<cms:embed 'en_header.html' />
-
+		<?php include('./../couch/snippets/en_header.php'); ?>
         <!-- ========== Page Title ========== -->
 		
 		<header class="page-title pt-large pt-light pt-parallax pt-plax-lg-light"

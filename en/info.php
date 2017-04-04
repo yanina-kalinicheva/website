@@ -63,7 +63,7 @@
 
         <!-- ========== Navigation ========== -->
 		
-		<cms:embed 'en_header.html' />
+		<?php include('./../couch/snippets/en_header.php'); ?>
 
         <!-- ========== Page Title ========== -->
 		
