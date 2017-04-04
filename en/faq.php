@@ -8,6 +8,15 @@
 </cms:template>
 
 <!doctype html>
+<?php 
+    $en_href = '../en/faq.php';    
+    $ru_href = '../ru/faq.php';
+    $ch_href = '../ch/faq.php'; 
+    $my_title="<cms:show k_page_title />";
+    $my_content="<cms:show en_content />";
+    $my_page_link="<cms:show k_page_link />"."&l=en"; 
+    $FolderOut="../"
+?>
 <html class="no-js" lang="en">
     <head>
         <meta charset="utf-8">

@@ -13,6 +13,15 @@
 
 <!doctype html>
 <html class="no-js" lang="en">
+<?php 
+    $en_href = '../en/contacts.php';    
+    $ru_href = '../ru/contacts.php';
+    $ch_href = '../ch/contacts.php'; 
+    $my_title="<cms:show k_page_title />";
+    $my_content="<cms:show en_content />";
+    $my_page_link="<cms:show k_page_link />"."&l=en"; 
+    $FolderOut="../"
+?>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
