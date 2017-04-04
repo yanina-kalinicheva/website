@@ -7,6 +7,14 @@
 
 <!doctype html>
 <html class="no-js" lang="en">
+<?php 
+    $en_href = '../en/russia_and_taiwan.php';    
+    $ru_href = '../ru/russia_and_taiwan.php';
+    $my_title="<cms:show ch_title />";
+    $my_content="<cms:show ch_content />";
+    $my_page_link="<cms:show k_page_link />"."&l=ch"; 
+    $FolderOut="../"
+?>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -117,7 +125,7 @@
 
 		<!-- ========== Footer Widgets ========== -->
         
-		<cms:embed 'ch_footer.html' />
+		<?php include('../couch/snippets/ch_footer.php'); ?>
 
         <!-- ========== Scripts ========== -->
 
