@@ -54,7 +54,7 @@
 
         <!-- ========== Navigation ========== -->
 
-		<cms:embed 'ch_header.html' />
+		<?php include('./../couch/snippets/ch_header.php'); ?>
 
         <!-- ========== Page Title ========== -->
 		
