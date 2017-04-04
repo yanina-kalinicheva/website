@@ -9,6 +9,15 @@
 
 <!doctype html>
 <html class="no-js" lang="en">
+<?php 
+    $en_href = '../en/about.php';    
+    $ru_href = '../ru/about.php';
+    $ch_href = '../ch/about.php'; 
+    $my_title="<cms:show k_page_title />";
+    $my_content="<cms:show en_content />";
+    $my_page_link="<cms:show k_page_link />"."&l=en"; 
+    $FolderOut="../"
+?>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -55,7 +64,7 @@
 
 
         <!-- ========== Navigation ========== -->
-		<cms:embed 'en_header.html' />
+		<?php include('./../couch/snippets/en_header.php'); ?>
 
         <!-- ========== Page Title ========== -->
 		
