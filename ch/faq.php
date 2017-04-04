@@ -105,7 +105,7 @@
 
 		<!-- ========== Footer Widgets ========== -->
         
-		<cms:embed 'ch_footer.html' />   
+		<?php include('../couch/snippets/ch_footer.php'); ?>
 
 
         <!-- ========== Scripts ========== -->

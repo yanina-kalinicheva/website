@@ -28,7 +28,7 @@
 			
             <!-- Russia & Taiwan -->
             <li class="dropdown">
-                <a style="color:black;" href="russia_and_taiwan.php" class="dropdown-toggle" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">
+                <a style="color:black;" href=<?php echo $langFolder.'russia_and_taiwan.php'; ?> class="dropdown-toggle" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">
 				Russia & <br>Taiwan<span class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <div class="row">
@@ -53,7 +53,7 @@
 			
             <!-- Consular Information -->
             <li class="dropdown">
-                <a style="color:black;" href="consular.php" class="dropdown-toggle" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">
+                <a style="color:black;" href=<?php echo $langFolder.'consular.php'; ?> class="dropdown-toggle" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">
 				Consular<br>Information<span class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <div class="row">
@@ -82,7 +82,7 @@
 			
             <!-- Additional Information -->
             <li class="dropdown">
-                <a style="color:black;" href="info.php" class="dropdown-toggle" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">
+                <a style="color:black;" href=<?php echo $langFolder. 'info.php'; ?> class="dropdown-toggle" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">
 				Additional<br>Information<span class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <div class="row">
@@ -100,7 +100,7 @@
             <!-- / Additional Information -->
 			
             <!-- Contacts -->
-            <li><a style="color:black;" href="contacts.php">Contacts<span class="sr-only"></span></a></li>
+            <li><a style="color:black;" href=<?php echo $langFolder. 'contacts.php'; ?>>Contacts<span class="sr-only"></span></a></li>
             </li>
             <!-- / Contacts -->
 			
@@ -114,7 +114,7 @@
           <ul class="nav navbar-nav navbar-right" style="font-size: 12px;">
         
 			<!-- FAQ -->
-            <li><a style="color:black;" href="faq.php">FAQ<span class="sr-only"></span></a></li>
+            <li><a style="color:black;" href=<?php echo $langFolder. 'faq.php'; ?>>FAQ<span class="sr-only"></span></a></li>
             </li>
             <!-- / FAQ -->
 			

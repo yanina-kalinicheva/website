@@ -76,9 +76,9 @@
                 </div>
             </div>
         </header>
-        <!-- embed news list view -->
+        <!-- include news list view -->
 		<?php include('../couch/snippets/news_list.php'); ?>
-        <!-- / embed news list view -->
+        <!-- / include news list view -->
         <!-- ========== Footer ========== -->
 
 		<?php include('../couch/snippets/ch_footer.php'); ?>

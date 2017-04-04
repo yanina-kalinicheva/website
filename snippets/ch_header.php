@@ -27,7 +27,7 @@
 					
                     <!-- Russia & Taiwan -->
                     <li class="dropdown">
-                        <a style="color:black;" href="russia_and_taiwan.php" class="dropdown-toggle" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">俄羅斯和台灣<span class="caret"></span></a>
+                        <a style="color:black;" href=<?php echo $langFolder.'russia_and_taiwan.php'; ?> class="dropdown-toggle" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">俄羅斯和台灣<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <div class="row">
                                 <!-- Culture -->
@@ -51,7 +51,7 @@
 					
                     <!-- Consular Information -->
                     <li class="dropdown">
-                        <a style="color:black;" href="consular.php" class="dropdown-toggle" data-hover="dropdown" 
+                        <a style="color:black;" href=<?php echo $langFolder.'consular.php'; ?> class="dropdown-toggle" data-hover="dropdown" 
 						data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">領事問題<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <div class="row">
@@ -80,7 +80,7 @@
 					
                     <!-- Additional Information -->
                     <li class="dropdown">
-                        <a style="color:black;" href="info.php" class="dropdown-toggle" data-hover="dropdown" data-delay="350" role="button" 
+                        <a style="color:black;" href=<?php echo $langFolder.'info.php'; ?> class="dropdown-toggle" data-hover="dropdown" data-delay="350" role="button" 
 						aria-haspopup="true" aria-expanded="false">其他資訊<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <div class="row">
@@ -99,7 +99,7 @@
                     <!-- / Additional Information -->
 					
                     <!-- Contacts -->
-                    <li><a style="color:black;" href="contacts.php">聯絡方式<span class="sr-only"></span></a></li>
+                    <li><a style="color:black;" href=<?php echo $langFolder.'contacts.php'; ?>>聯絡方式<span class="sr-only"></span></a></li>
                     </li>
                     <!-- / Contacts -->
                 </ul>
@@ -109,7 +109,7 @@
             <div class="col-xs-3" style="font-size: 14px;">
                 <ul class="nav navbar-nav navbar-right">
                     <!-- FAQ -->
-                    <li><a style="color:black;" href="faq.php">問題集<span class="sr-only"></span></a></li>
+                    <li><a style="color:black;" href=<?php echo $langFolder.'faq.php'; ?>>問題集<span class="sr-only"></span></a></li>
                     </li>
                     <!-- / FAQ -->
                     <!-- Search -->
