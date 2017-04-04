@@ -11,6 +11,7 @@
     <cms:editable name='topic3_content' label='Topic 3 content' desc='Enter short description of third topic' type='text' />
     <cms:editable name='topic4_title' label='Topic 4 title' desc='Enter title of the fourth topic' type='text' />
     <cms:editable name='topic4_content' label='Topic 4 content' desc='Enter short description of fourth topic' type='text' />
+    <cms:editable name='pop_up' label='Popup' desc='Enter popup news' type='text' />
 </cms:template>
 
 <!doctype html>
@@ -49,11 +50,6 @@
     <!-- JS -->
     <script src="../assets/js/vendor/modernizr-2.8.3.min.js"></script>
     <script language="javascript">
-        var news = document.getElementById('popUp').textContent;
-        if (news.length) {
-            popUp(news);
-        }
-
         function popUp(news) {
             alert(news);
         }
@@ -68,6 +64,13 @@
     <div class="preloader">
         <img src="../assets/images/loader.svg" alt="Loading...">
     </div>
+    <!-- ========== Popup ==========-->
+    <cms:if "<cms:not_empty pop_up />" >
+        <script type="text/javascript">
+            var news = "<cms:show pop_up/>"
+            alert(news);
+        </script>
+    </cms:if>
 
     <!-- ========== Navigation ========== -->
 		
