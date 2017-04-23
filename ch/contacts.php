@@ -145,7 +145,7 @@
                       <!-- Hours -->
                       <div class="col-sm-5 address-group">
                         <span>Open Hours</span>
-                        <cms:show article_content />
+                        <cms:show open_hours />
                       </div>
 
                     </div><!-- / .row -->

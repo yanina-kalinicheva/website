@@ -144,7 +144,7 @@
                       <!-- Hours -->
                       <div class="col-sm-5 address-group">
                         <span>Время работы</span>
-                        <cms:show article_content />
+                        <cms:show open_hours />
                       </div>
 
                     </div><!-- / .row -->
@@ -171,20 +171,20 @@
 						<option>Economy</option>
 						<option>Other</option>
 						</select>
-						<label for="select-form">Select a subject</label>
+						<label for="select-form">Выберите тему</label>
 					</div>
 
                     <!-- Name -->
                     <div class="form-group">
                       <input type="text" name="name" id="name-contact-1" class="form-control validate-locally" placeholder="Enter your name">
-                      <label for="name-contact-1">Your name</label>
+                      <label for="name-contact-1">Ваше имя</label>
                       <span class="pull-right alert-error"></span>
                     </div>
 
                     <!-- Email -->
                     <div class="form-group">
                       <input type="email" name="email" id="email-contact-1" class="form-control validate-locally" placeholder="Enter your email">
-                      <label for="email-contact-1">Your email</label>
+                      <label for="email-contact-1">Ваша электронная почта</label>
                       <span class="pull-right alert-error"></span>
                     </div>
 
@@ -195,7 +195,7 @@
                     <!-- Message -->
                     <div class="form-group">
                       <textarea name="message" id="message-contact-1" class="form-control" rows="9" placeholder="Your Message"></textarea>
-                      <label for="message-contact-1">Message</label>
+                      <label for="message-contact-1">Сообщение</label>
                     </div>
                     <div>
                       <input type="submit" class="btn pull-right" value="Send Message">
