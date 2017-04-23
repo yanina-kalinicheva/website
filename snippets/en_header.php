@@ -143,7 +143,7 @@
                     <!-- / Search -->
                     <!-- Languages -->
                     <li class="dropdown">
-                        <a style="color:black;" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">language <span class="caret"></span></a>
+                        <a style="color:black;" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Рус/En/中文<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">English</a></li>
                             <li><a href=<?php echo $ru_href; ?>>Русский</a></li>
