@@ -107,24 +107,32 @@
                     </li>
                     <!-- / FAQ -->
                     <!-- Search -->
-                    <style>
-                    .gsc-search-button,
-                    .gsc-input-box,
-                    .gsc-input,
-                    .gs_tti50 {
-                        -webkit-box-sizing: initial;
-                        -moz-box-sizing: initial;
-                        box-sizing: initial;
-                    }
                     
-                    .gsc-search-button {
-                        vertical-align: middle;
-                    }
-                    </style>
                     <li class="dropdown">
                         <a style="color:black;" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search"></i> Search</a>
                         <ul class="dropdown-menu search-dropdown" style="width:325px">
                             <li>
+                                <style type="text/css">
+                                .gsc-control-cse .gsc-table-result {
+                                    font-family: inherit;
+                                }
+                                
+                                .gsc-control-cse .gsc-input-box {
+                                    height: inherit;
+                                }
+                                
+                                input.gsc-input,
+                                .gsc-input-box,
+                                .gsc-input-box-hover,
+                                .gsc-input-box-focus,
+                                .gsc-search-button,
+                                input.gsc-search-button-v2,
+                                #gs_tti50 {
+                                    box-sizing: content-box;
+                                    line-height: normal;
+                                    margin-top: 0px;
+                                }
+                                </style>
                                 <script>
                                 (function() {
                                     var cx = '005309254330236089334:qpgizmgtvy0';
@@ -136,7 +144,7 @@
                                     s.parentNode.insertBefore(gcse, s);
                                 })();
                                 </script>
-                                <gcse:search class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"></gcse:search>
+                                <gcse:searchbox-only></gcse:searchbox-only>
                             </li>
                         </ul>
                     </li>
