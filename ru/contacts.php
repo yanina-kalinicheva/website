@@ -161,7 +161,9 @@
               <div class="row">
                 <form action="../assets/contact-form/contact-form.php" method="POST" id="contact-form-1" class="form-ajax">
                   <div class="col-md-offset-2 col-md-4 wow fadeInUp" data-wow-duration="1s">
-				  
+				    
+            <!-- Lang -->
+              <textarea name='lang' style="display: none">ru</textarea>
 				    <!-- Subject -->
 					<div class="form-group">
 						<select class="form-control" id="select-form">
@@ -176,14 +178,14 @@
 
                     <!-- Name -->
                     <div class="form-group">
-                      <input type="text" name="name" id="name-contact-1" class="form-control validate-locally" placeholder="Enter your name">
+                      <input type="text" name="name" id="name-contact-ru" class="form-control validate-locally" placeholder="Enter your name">
                       <label for="name-contact-1">Ваше имя</label>
                       <span class="pull-right alert-error"></span>
                     </div>
 
                     <!-- Email -->
                     <div class="form-group">
-                      <input type="email" name="email" id="email-contact-1" class="form-control validate-locally" placeholder="Enter your email">
+                      <input type="email" name="email" id="email-contact-1-ru" class="form-control validate-locally" placeholder="Enter your email">
                       <label for="email-contact-1">Ваша электронная почта</label>
                       <span class="pull-right alert-error"></span>
                     </div>
