@@ -65,7 +65,7 @@
                                 <div class="col-lg-6 mb-sm-30">
                                     <li class="dropdown-header">Legalization</li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">Legalize <br><br>documents</a></li>
+                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">Legalize documents</a></li>
                                     <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">How to</a></li>
                                 </div>
                             </div>
