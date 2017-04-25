@@ -1,5 +1,5 @@
 <?php require_once( '../couch/cms.php' ); ?>
-<cms:template title='О нас'>
+<cms:template title='О нас' order='8'>
 	<cms:editable name='header_image' label='Header Image' desc='Upload header image here' type='image' />
 	<cms:editable name='greetings' label='Greeting' desc='Enter greetings to the page header' type='text'>Добро пожаловать</cms:editable>
 	<cms:editable name='article_image' label='Image' width='750' height='400' type='image' />
