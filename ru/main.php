@@ -1,14 +1,18 @@
 <?php require_once( '../couch/cms.php' ); ?>
-<cms:template title='Представительство МТК в Тайбэе'>
+<cms:template title='Представительство МТК в Тайбэе' order='1'>
 	<cms:editable name='header_image' label='Header Image' desc='Upload header image here' type='image' />
 	<cms:editable name='title' label='Title' desc='Enter title to the page' type='text'>Hot topics</cms:editable>
 	<cms:editable name='subtitle' label='Subtitle' desc='Enter subtitle under the page title' type='text'>You may find this useful</cms:editable>
+    <cms:editable name='topic_image1' label='Topic Image 1' desc='Upload topic image 1 here' type='image' />
 	<cms:editable name='topic1_title' label='Topic 1 title' desc='Enter title of the first topic' type='text' />
 	<cms:editable name='topic1_content' label='Topic 1 content' desc='Enter short description of first topic' type='text' />
+    <cms:editable name='topic_image2' label='Topic Image 2' desc='Upload topic image 2 here' type='image' />
 	<cms:editable name='topic2_title' label='Topic 2 title' desc='Enter title of the second topic' type='text' />
 	<cms:editable name='topic2_content' label='Topic 2 content' desc='Enter short description of second topic' type='text' />
+    <cms:editable name='topic_image3' label='Topic Image 3' desc='Upload topic image 3 here' type='image' />
 	<cms:editable name='topic3_title' label='Topic 3 title' desc='Enter title of the third topic' type='text' />
 	<cms:editable name='topic3_content' label='Topic 3 content' desc='Enter short description of third topic' type='text' />
+    <cms:editable name='topic_image4' label='Topic Image 4' desc='Upload topic image 4 here' type='image' />
 	<cms:editable name='topic4_title' label='Topic 4 title' desc='Enter title of the fourth topic' type='text' />
 	<cms:editable name='topic4_content' label='Topic 4 content' desc='Enter short description of fourth topic' type='text' />
     <cms:editable name='pop_up' label='Popup' desc='Enter popup news' type='text' />
@@ -99,25 +103,25 @@
             <div class="row">
                 <!-- Item 1 -->
                 <div class="col-md-3 col-sm-6 mb-sm-50 ft-item ft-square-frame-dark wow zoomIn" data-wow-duration=".6s" data-wow-delay=".3s">
-                    <span class="et-tools"></span>
+                    <a href=#><span style="background: url(<cms:show topic_image1 />) no-repeat 0 100%; background-position: center; "></span></a>
                     <h5><cms:show topic1_title /></h5>
                     <p><cms:show topic1_content /></p>
                 </div>
                 <!-- Item 2 -->
                 <div class="col-md-3 col-sm-6 mb-sm-50 ft-item ft-square-frame-dark wow zoomIn" data-wow-duration=".6s">
-                    <span class="et-desktop"></span>
+                    <a href=#><span style="background: url(<cms:show topic_image2 />) no-repeat 0 100%; background-position: center; "></span></a>
                     <h5><cms:show topic2_title /></h5>
                     <p><cms:show topic2_content /></p>
                 </div>
                 <!-- Item 3 -->
                 <div class="col-md-3 col-sm-6 mb-sm-50 ft-item ft-square-frame-dark wow zoomIn" data-wow-duration=".6s">
-                    <span class="et-anchor"></span>
+                    <a href=#><span style="background: url(<cms:show topic_image3 />) no-repeat 0 100%; background-position: center; "></span></a>
                     <h5><cms:show topic3_title /></h5>
                     <p><cms:show topic3_content /></p>
                 </div>
                 <!-- Item 4 -->
                 <div class="col-md-3 col-sm-6 mb-sm-50 ft-item ft-square-frame-dark wow zoomIn" data-wow-duration=".6s" data-wow-delay=".3s">
-                    <span class="et-strategy"></span>
+                    <a href=#><span style="background: url(<cms:show topic_image4 />) no-repeat 0 100%; background-position: center; "></span></a>
                     <h5><cms:show topic4_title /></h5>
                     <p><cms:show topic4_content /></p>
                 </div>
@@ -134,7 +138,7 @@
         </header>
         <div class="row">
             <div class="col-md-6">
-                <cms:embed 'news_block.html' />
+                <?php include('../couch/snippets/news_block.php');?>
                 <a href="#"><h5 style="color:blue;" align=center>More news here</h5></a>
             </div>
             <!-- / .col-md-6 -->

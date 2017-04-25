@@ -55,36 +55,19 @@
 	Navigation | Navbar
 -------------------------------------------------- */
 	
-	var previousScroll = 0;
-	
 	function initNavbar(){
 
 		// Sticky Nav & Transparent Background
 		$(window).scroll(function(){
 			
-			var currentScroll = $(this).scrollTop();
-	
-			if (currentScroll > 20) {// && currentScroll < $(document).height() - $(window).height()){
-				if (currentScroll > previousScroll){
-					$('nav').removeClass('navbar-trans', 300);
-					$('nav').removeClass('navbar-trans-dark');
-					$('nav').addClass('navbar-hide', 300);
-				}
-				else {
-					$('nav').removeClass('navbar-trans', 300);
-					$('nav').removeClass('navbar-trans-dark');
-					$('nav').removeClass('navbar-hide', 300);
-					$('nav').addClass('navbar-small', 300);
-										
-				}
-				previousScroll = currentScroll;
+			if ($(window).scrollTop() > 20) {
+				$('nav').removeClass('navbar-trans', 300);
+				$('nav').removeClass('navbar-trans-dark');
+				$('nav').addClass('navbar-small', 300);
 			}
-			else 
-			{
+			else {
 				$('nav:not(.mobile-nav)').addClass('navbar-trans', 300);
 				$('nav').removeClass('navbar-small', 300);
-				$('nav').removeClass('navbar-hide', 300);
-
 
 				if ($('nav').hasClass('trans-helper')) {
 					$('nav:not(.mobile-nav)').addClass('navbar-trans-dark');
@@ -831,7 +814,9 @@ $(function() {
 
 //	Regular Expressions
 var expEmail = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[_a-z0-9-]+(\.[_a-z0-9-]+)*(\.[a-z]{2,4})$/;
-var	expLettersOnly = /^[A-Za-z ]+$/;
+var	expLettersOnly1 = /^[A-Za-z ]+$/;
+var expLettersOnly2 = /^[\u4e00-\u9fa5　]+$/; 
+var expLettersOnly3 = /^[а-яА-ЯЁё ]+$/
 
 //	Checks if a field has the correct length
 function validateLength ( fieldValue, minLength ) {
@@ -861,6 +846,7 @@ $( '.form-ajax' ).submit(function(e) {
 
 //	Validates the fileds
 function validateField ( field ) {
+	var id = field.attr("id");
 	var errorText = "",
 			error = false,
 			value = field.val(),
@@ -868,18 +854,47 @@ function validateField ( field ) {
 
 	// Test the name field
 	if ( field.attr("name") === "name" ) {
-		if ( !validateLength( value, 2 ) ) {
+		if ( id === "name-contact-1-en" ) {
+			if ( !validateLength( value, 2 ) ) {
 					error = true;
 					errorText += '<i class="fa fa-info-circle"></i> The name is too short!<br>';
 					$('input[name="name"]').addClass('input-error');
-		} else {
-			$('input[name="name"]').removeClass('input-error');
+			} else {
+					$('input[name="name"]').removeClass('input-error');
+			}
+		} else if ( id === "name-contact-1-ch" ) {
+			if ( !validateLength( value, 1 ) ) {
+					error = true;
+					errorText += '<i class="fa fa-info-circle"></i> 輸入長度過短!<br>';
+					$('input[name="name"]').addClass('input-error');
+			} else {
+					$('input[name="name"]').removeClass('input-error');
+			}
+		} else if ( id === "name-contact-1-ru" ) {
+			if ( !validateLength( value, 2 ) ) {
+					error = true;
+					errorText += '<i class="fa fa-info-circle"></i> Имя слишком короткое!<br>';
+					$('input[name="name"]').addClass('input-error');
+			} else {
+					$('input[name="name"]').removeClass('input-error');
+			}
 		}
 
-		if ( !expLettersOnly.test( value ) ) {
-					error = true;
-					errorText += '<i class="fa fa-info-circle"></i> The name can contain only letters and spaces!<br>';
-					$('input[name="name"]').addClass('input-error-2');
+		if ( !expLettersOnly1.test( value ) && !expLettersOnly2.test( value ) && !expLettersOnly3.test( value )) {
+			if ( id === "name-contact-1-en" ) {
+				error = true;
+				errorText += '<i class="fa fa-info-circle"></i> The name can contain only letters and spaces!<br>';
+				$('input[name="name"]').addClass('input-error-2');
+			} else if ( id === "name-contact-1-ch" ) {
+				error = true;
+				errorText += '<i class="fa fa-info-circle"></i> 名字只能包含文字和空格!<br>';
+				$('input[name="name"]').addClass('input-error-2');
+			} else if ( id === "name-contact-1-ru" ) {
+				error = true;
+				errorText += '<i class="fa fa-info-circle"></i> Имя может содержать только буквы и пробелы!<br>';
+				$('input[name="name"]').addClass('input-error-2');
+			}
+					
 		} else {
 			$('input[name="name"]').removeClass('input-error-2');
 		}
@@ -888,9 +903,19 @@ function validateField ( field ) {
 	// Test the email field
 	if ( field.attr("name") === "email" ) {
 		if ( !expEmail.test( value ) ) {
-					error = true;
-					errorText += '<i class="fa fa-info-circle"></i> Enter correct email address!<br>';
-					$('input[name="email"]').addClass('input-error');
+			if ( id === "email-contact-1-en" ) {
+				error = true;
+				errorText += '<i class="fa fa-info-circle"></i> Enter correct email address!<br>';
+				$('input[name="email"]').addClass('input-error');
+			} else if ( id === "email-contact-1-ch" ) {
+				error = true;
+				errorText += '<i class="fa fa-info-circle"></i> 請輸入正確的電子信箱格式!<br>';
+				$('input[name="email"]').addClass('input-error');
+			} else if ( id === "email-contact-1-ru" ) {
+				error = true;
+				errorText += '<i class="fa fa-info-circle"></i> Введите правильный адрес электронной почты!<br>';
+				$('input[name="email"]').addClass('input-error');
+			}
 		} else {
 			$('input[name="email"]').removeClass('input-error');
 		}

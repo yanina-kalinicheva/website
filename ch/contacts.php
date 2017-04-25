@@ -1,5 +1,5 @@
 <?php require_once( '../couch/cms.php' ); ?>
-<cms:template title='聯絡方式'>
+<cms:template title='聯絡方式' order='13'>
 	<cms:editable name='header_image' label='Header Image' desc='Upload header image here' type='image' />
 	<cms:editable name='greetings' label='Greeting' desc='Enter greetings to the page header' type='text'>We love to hear from you</cms:editable>
 	<cms:editable name='title' label='Title' desc='Enter title to the page' type='text'>Say hello</cms:editable>
@@ -162,7 +162,9 @@
               <div class="row">
                 <form action="../assets/contact-form/contact-form.php" method="POST" id="contact-form-1" class="form-ajax">
                   <div class="col-md-offset-2 col-md-4 wow fadeInUp" data-wow-duration="1s">
-				  
+				          
+                  <!-- Lang -->
+                  <textarea name='lang' style="display: none">ch</textarea>
       				    <!-- Subject -->
         					<div class="form-group">
         						<select class="form-control" id="select-form" name="subject-option">
@@ -177,14 +179,14 @@
 
                     <!-- Name -->
                     <div class="form-group">
-                      <input type="text" name="name" id="name-contact-1" class="form-control validate-locally" placeholder="Enter your name">
+                      <input type="text" name="name" id="name-contact-1-ch" class="form-control validate-locally" placeholder="Enter your name">
                       <label for="name-contact-1">Your name</label>
                       <span class="pull-right alert-error"></span>
                     </div>
 
                     <!-- Email -->
                     <div class="form-group">
-                      <input type="email" name="email" id="email-contact-1" class="form-control validate-locally" placeholder="Enter your email">
+                      <input type="email" name="email" id="email-contact-1-ch" class="form-control validate-locally" placeholder="Enter your email">
                       <label for="email-contact-1">Your email</label>
                       <span class="pull-right alert-error"></span>
                     </div>
