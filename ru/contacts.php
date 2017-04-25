@@ -178,7 +178,7 @@
 
                     <!-- Name -->
                     <div class="form-group">
-                      <input type="text" name="name" id="name-contact-ru" class="form-control validate-locally" placeholder="Enter your name">
+                      <input type="text" name="name" id="name-contact-1-ru" class="form-control validate-locally" placeholder="Enter your name">
                       <label for="name-contact-1">Ваше имя</label>
                       <span class="pull-right alert-error"></span>
                     </div>

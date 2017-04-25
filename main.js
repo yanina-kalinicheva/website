@@ -815,8 +815,8 @@ $(function() {
 //	Regular Expressions
 var expEmail = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[_a-z0-9-]+(\.[_a-z0-9-]+)*(\.[a-z]{2,4})$/;
 var	expLettersOnly1 = /^[A-Za-z ]+$/;
-var expLettersOnly2 = /^[\u4e00-\u9fa5]+$/; 
-var expLettersOnly3 = /^[а-яА-ЯЁё]+$/
+var expLettersOnly2 = /^[\u4e00-\u9fa5 ]+$/; 
+var expLettersOnly3 = /^[а-яА-ЯЁё ]+$/
 
 //	Checks if a field has the correct length
 function validateLength ( fieldValue, minLength ) {
@@ -873,7 +873,7 @@ function validateField ( field ) {
 		} else if ( id === "name-contact-1-ru" ) {
 			if ( !validateLength( value, 2 ) ) {
 					error = true;
-					errorText += '<i class="fa fa-info-circle"></i> The name is too short!<br>';
+					errorText += '<i class="fa fa-info-circle"></i> Имя слишком короткое!<br>';
 					$('input[name="name"]').addClass('input-error');
 			} else {
 					$('input[name="name"]').removeClass('input-error');
@@ -891,7 +891,7 @@ function validateField ( field ) {
 				$('input[name="name"]').addClass('input-error-2');
 			} else if ( id === "name-contact-1-ru" ) {
 				error = true;
-				errorText += '<i class="fa fa-info-circle"></i> The name can contain only letters and spaces!<br>';
+				errorText += '<i class="fa fa-info-circle"></i> Имя может содержать только буквы и пробелы!<br>';
 				$('input[name="name"]').addClass('input-error-2');
 			}
 					
@@ -913,7 +913,7 @@ function validateField ( field ) {
 				$('input[name="email"]').addClass('input-error');
 			} else if ( id === "email-contact-1-ru" ) {
 				error = true;
-				errorText += '<i class="fa fa-info-circle"></i> Enter correct email address!<br>';
+				errorText += '<i class="fa fa-info-circle"></i> Введите правильный адрес электронной почты!<br>';
 				$('input[name="email"]').addClass('input-error');
 			}
 		} else {

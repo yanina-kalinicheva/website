@@ -38,7 +38,7 @@ if(isset($_POST['email'])) {
 
         echo '<div class="alert alert-danger alert-dismissible wow fadeInUp" role="alert">
           <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <strong>Something is wrong:</strong><br>';
+          <strong>Что-то не так:</strong><br>';
         echo $error."<br />";
       }
       
@@ -77,7 +77,7 @@ if(isset($_POST['email'])) {
           
           } else if ($lang == 'ru') {
 
-            died('We are sorry, but there appears to be a problem with the form you submitted.');
+            died('Извините, но возникли проблемы с заполнением формы.');
           
           }       
  
@@ -109,7 +109,7 @@ if(isset($_POST['email'])) {
 
     } else if ($lang == "ru") {
 
-      $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+      $error_message .= 'Указанный адрес электронной почты недействителен.<br />';
 
     } 
  
@@ -117,8 +117,8 @@ if(isset($_POST['email'])) {
   }
  
     $string_exp1 = "/^[A-Za-z .'-]+$/";
-    $string_exp2 = "/^[\u4e00-\u9fa5]+$/"; 
-    $string_exp3 = "/^[а-яА-ЯЁё]+$/";
+    $string_exp2 = "/^[\u4e00-\u9fa5 ]+$/"; 
+    $string_exp3 = "/^[а-яА-ЯЁё ]+$/";
  
   if(!preg_match($string_exp1,$name) && !preg_match($string_exp2,$name)) {
     global $lang;
@@ -132,7 +132,7 @@ if(isset($_POST['email'])) {
 
     } else if ($lang == "ru") {
  
-      $error_message .= 'The First Name you entered does not appear to be valid.<br />';
+      $error_message .= 'Введенное имя недействительно.<br />';
     }
  
   }
@@ -149,7 +149,7 @@ if(isset($_POST['email'])) {
     
     } else if ($lang == "ru") {
  
-      $error_message .= 'The First Name you entered does not appear to be valid.<br />';
+      $error_message .= 'Введенное сообщение недействительно.<br />';
     }
  
   }
