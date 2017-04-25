@@ -134,7 +134,7 @@
         </header>
         <div class="row">
             <div class="col-md-6">
-                <cms:embed 'news_block.html' />
+                <?php include('../couch/snippets/news_block.php');?>
                 <a href="#"><h5 style="color:blue;" align=center>More news here</h5></a>
             </div>
             <!-- / .col-md-6 -->
