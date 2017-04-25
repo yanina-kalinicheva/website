@@ -815,7 +815,7 @@ $(function() {
 //	Regular Expressions
 var expEmail = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[_a-z0-9-]+(\.[_a-z0-9-]+)*(\.[a-z]{2,4})$/;
 var	expLettersOnly1 = /^[A-Za-z ]+$/;
-var expLettersOnly2 = /^[\u4e00-\u9fa5 ]+$/; 
+var expLettersOnly2 = /^[\u4e00-\u9fa5　]+$/; 
 var expLettersOnly3 = /^[а-яА-ЯЁё ]+$/
 
 //	Checks if a field has the correct length
