@@ -3,23 +3,23 @@
 	<cms:editable name='header_image' label='Header Image' desc='Upload header image here' type='image' />
 	<cms:editable name='title' label='Title' desc='Enter title to the page' type='text'>Hot topics</cms:editable>
 	<cms:editable name='subtitle' label='Subtitle' desc='Enter subtitle under the page title' type='text'>You may find this useful</cms:editable>
-    <cms:editable name='topic_image1' label='Topic Image 1' desc='Upload topic image 1 here' type='image' />
+    <cms:editable name='topic1_image' label='Topic 1 Image' desc='Upload image of the first topic here' type='image' />
 	<cms:editable name='topic1_title' label='Topic 1 title' desc='Enter title of the first topic' type='text' />
 	<cms:editable name='topic1_content' label='Topic 1 content' desc='Enter short description of first topic' type='text' />
-    <cms:editable name='topic_image2' label='Topic Image 2' desc='Upload topic image 2 here' type='image' />
+    <cms:editable name='topic1_link' label='Topic 1 link' desc='Put the full link of the first topic here' type='text' />
+    <cms:editable name='topic2_image' label='Topic 2 Image' desc='Upload image of the second topic here' type='image' />
 	<cms:editable name='topic2_title' label='Topic 2 title' desc='Enter title of the second topic' type='text' />
 	<cms:editable name='topic2_content' label='Topic 2 content' desc='Enter short description of second topic' type='text' />
-    <cms:editable name='topic_image3' label='Topic Image 3' desc='Upload topic image 3 here' type='image' />
+    <cms:editable name='topic2_link' label='Topic 2 link' desc='Put the full link of the second topic here' type='text' />
+    <cms:editable name='topic3_image' label='Topic 3 Image' desc='Upload image of the third topic here' type='image' />
 	<cms:editable name='topic3_title' label='Topic 3 title' desc='Enter title of the third topic' type='text' />
 	<cms:editable name='topic3_content' label='Topic 3 content' desc='Enter short description of third topic' type='text' />
-    <cms:editable name='topic_image4' label='Topic Image 4' desc='Upload topic image 4 here' type='image' />
+    <cms:editable name='topic3_link' label='Topic 3 link' desc='Put the full link of the third topic here' type='text' />
+    <cms:editable name='topic4_image' label='Topic 4 Image' desc='Upload image of the fourth topic here' type='image' />
 	<cms:editable name='topic4_title' label='Topic 4 title' desc='Enter title of the fourth topic' type='text' />
 	<cms:editable name='topic4_content' label='Topic 4 content' desc='Enter short description of fourth topic' type='text' />
+    <cms:editable name='topic4_link' label='Topic 4 link' desc='Put the full link of the fourth topic here' type='text' />
     <cms:editable name='pop_up' label='Popup' desc='Enter popup news' type='text' />
-    <cms:editable name='topic1_link' label='Topic 1 link' desc='Enter title of the first topic' type='text' />
-    <cms:editable name='topic2_link' label='Topic 2 link' desc='Enter title of the second topic' type='text' />
-    <cms:editable name='topic3_link' label='Topic 3 link' desc='Enter title of the third topic' type='text' />
-    <cms:editable name='topic4_link' label='Topic 4 link' desc='Enter title of the fourth topic' type='text' />
 </cms:template>
 
 <!doctype html>
@@ -110,25 +110,25 @@
             <div class="row">
 				<!-- Item 1 -->
                 <div class="col-md-3 col-sm-6 mb-sm-50 ft-item ft-square-frame-dark wow zoomIn" data-wow-duration=".6s" data-wow-delay=".3s">
-                    <a href=<cms:show topic1_link />><span style="background: url(<cms:show topic_image1 />) no-repeat 0 100%; background-position: center; "></span></a>
+                    <a href=<cms:show topic1_link />><span style="background: url(<cms:show topic1_image />) no-repeat 0 100%; background-position: center; "></span></a>
                     <h5><cms:show topic1_title /></h5>
                     <p><cms:show topic1_content /></p>
                 </div>
                 <!-- Item 2 -->
                 <div class="col-md-3 col-sm-6 mb-sm-50 ft-item ft-square-frame-dark wow zoomIn" data-wow-duration=".6s">
-                    <a href=<cms:show topic2_link />><span style="background: url(<cms:show topic_image2 />) no-repeat 0 100%; background-position: center; "></span></a>
+                    <a href=<cms:show topic2_link />><span style="background: url(<cms:show topic2_image />) no-repeat 0 100%; background-position: center; "></span></a>
                     <h5><cms:show topic2_title /></h5>
                     <p><cms:show topic2_content /></p>
                 </div>
                 <!-- Item 3 -->
                 <div class="col-md-3 col-sm-6 mb-sm-50 ft-item ft-square-frame-dark wow zoomIn" data-wow-duration=".6s">
-                    <a href=<cms:show topic3_link />><span style="background: url(<cms:show topic_image3 />) no-repeat 0 100%; background-position: center; "></span></a>
+                    <a href=<cms:show topic3_link />><span style="background: url(<cms:show topic3_image />) no-repeat 0 100%; background-position: center; "></span></a>
                     <h5><cms:show topic3_title /></h5>
                     <p><cms:show topic3_content /></p>
                 </div>
                 <!-- Item 4 -->
                 <div class="col-md-3 col-sm-6 mb-sm-50 ft-item ft-square-frame-dark wow zoomIn" data-wow-duration=".6s" data-wow-delay=".3s">
-                    <a href=<cms:show topic4_link />><span style="background: url(<cms:show topic_image4 />) no-repeat 0 100%; background-position: center; "></span></a>
+                    <a href=<cms:show topic4_link />><span style="background: url(<cms:show topic4_image />) no-repeat 0 100%; background-position: center; "></span></a>
                     <h5><cms:show topic4_title /></h5>
                     <p><cms:show topic4_content /></p>
                 </div>
@@ -159,7 +159,7 @@
     <!-- / .container -->
 		<!-- ========== Footer Widgets ========== -->
     
-		<cms:embed 'en_footer.html' />
+		<?php include('../couch/snippets/en_footer.php'); ?>
 		
         <!-- ========== Scripts ========== -->
 
