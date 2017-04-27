@@ -5,7 +5,7 @@
 	<cms:editable name='title' label='Title' desc='Enter title to the page' type='text'>Say hello</cms:editable>
 	<cms:editable name='subtitle' label='Subtitle' desc='Enter subtitle under the page title' type='text'>We love to discuss your idea</cms:editable>
 	<cms:editable name='phone' label='Phone' type='text'>(+886-2) 8780-3011</cms:editable>
-	<cms:editable name='address' label='Address' type='text'>11049 台灣台北市信義區信義路五段2號9樓 （莫北協代表處）</cms:editable>
+	<cms:editable name='address' label='Address' type='text'>9F, No. 2, Section 5, XinYi Road, Taipei City, Taiwan 11049 (Moscow-Taipei Commission)</cms:editable>
 	<cms:editable name='fax' label='Fax' type='text'>(+886-2) 8780-2511</cms:editable>
 	<cms:editable name='open_hours' label='Open Hours' type='richtext' />
 
@@ -108,7 +108,7 @@
 
             <!-- Show Info Button -->
                 <div class="show-info-link">
-                  <a href="#" class="show-info"><i class="fa fa-info"></i><h6>Show info</h6></a>
+                  <a href="#" class="show-info"><i class="fa fa-info"></i><h6>Показать сведения</h6></a>
                 </div>
 
             <div class="container">
@@ -151,7 +151,7 @@
 
                     <!-- Show Map Button -->
                     <div class="row show-map-link">
-                      <a href="#" class="show-map"><span class="icon-map-pin"></span>Show on map</a>
+                      <a href="#" class="show-map"><span class="icon-map-pin"></span>Показать на карте</a>
                     </div><!-- / .row -->
                   </address>
                 </div><!-- / .contact-info-wrapper -->
@@ -178,14 +178,14 @@
 
                     <!-- Name -->
                     <div class="form-group">
-                      <input type="text" name="name" id="name-contact-1-ru" class="form-control validate-locally" placeholder="Enter your name">
+                      <input type="text" name="name" id="name-contact-1-ru" class="form-control validate-locally" placeholder="Введите Ваше имя">
                       <label for="name-contact-1">Ваше имя</label>
                       <span class="pull-right alert-error"></span>
                     </div>
 
                     <!-- Email -->
                     <div class="form-group">
-                      <input type="email" name="email" id="email-contact-1-ru" class="form-control validate-locally" placeholder="Enter your email">
+                      <input type="email" name="email" id="email-contact-1-ru" class="form-control validate-locally" placeholder="Введите Вашу электронную почту">
                       <label for="email-contact-1">Ваша электронная почта</label>
                       <span class="pull-right alert-error"></span>
                     </div>
@@ -196,11 +196,11 @@
 
                     <!-- Message -->
                     <div class="form-group">
-                      <textarea name="message" id="message-contact-1" class="form-control" rows="9" placeholder="Your Message"></textarea>
+                      <textarea name="message" id="message-contact-1" class="form-control" rows="9" placeholder="Ваше сообщение"></textarea>
                       <label for="message-contact-1">Сообщение</label>
                     </div>
                     <div>
-                      <input type="submit" class="btn pull-right" value="Send Message">
+                      <input type="submit" class="btn pull-right" value="Отправить сообщение">
                     </div>
 
                     <!-- Ajax Message -->
@@ -218,7 +218,7 @@
 
 		<!-- ========== Footer Widgets ========== -->
         
-        <cms:embed 'ru_footer.html' />    
+		<?php include('../couch/snippets/ru_footer.php'); ?>
 
         <!-- ========== Scripts ========== -->
 

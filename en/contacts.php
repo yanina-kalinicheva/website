@@ -5,7 +5,7 @@
 	<cms:editable name='title' label='Title' desc='Enter title to the page' type='text'>Say hello</cms:editable>
 	<cms:editable name='subtitle' label='Subtitle' desc='Enter subtitle under the page title' type='text'>We love to discuss your idea</cms:editable>
 	<cms:editable name='phone' label='Phone' type='text'>(+886-2) 8780-3011</cms:editable>
-	<cms:editable name='address' label='Address' type='text'>11049 台灣台北市信義區信義路五段2號9樓 （莫北協代表處）</cms:editable>
+	<cms:editable name='address' label='Address' type='text'>9F, No. 2, Section 5, XinYi Road, Taipei City, Taiwan 11049 (Moscow-Taipei Commission)</cms:editable>
 	<cms:editable name='fax' label='Fax' type='text'>(+886-2) 8780-2511</cms:editable>
 	<cms:editable name='open_hours' label='Open Hours' type='richtext' />
 
@@ -219,7 +219,7 @@
 
 		<!-- ========== Footer Widgets ========== -->
 		
-        <cms:embed 'en_footer.html' />
+		<?php include('../couch/snippets/en_footer.php'); ?>
     
         <!-- ========== Scripts ========== -->
 
