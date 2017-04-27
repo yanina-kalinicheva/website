@@ -16,6 +16,10 @@
 	<cms:editable name='topic4_title' label='Topic 4 title' desc='Enter title of the fourth topic' type='text' />
 	<cms:editable name='topic4_content' label='Topic 4 content' desc='Enter short description of fourth topic' type='text' />
     <cms:editable name='pop_up' label='Popup' desc='Enter popup news' type='text' />
+    <cms:editable name='topic1_link' label='Topic 1 link' desc='Enter title of the first topic' type='text' />
+    <cms:editable name='topic2_link' label='Topic 2 link' desc='Enter title of the second topic' type='text' />
+    <cms:editable name='topic3_link' label='Topic 3 link' desc='Enter title of the third topic' type='text' />
+    <cms:editable name='topic4_link' label='Topic 4 link' desc='Enter title of the fourth topic' type='text' />
 </cms:template>
 
 <!doctype html>
@@ -106,25 +110,25 @@
             <div class="row">
 				<!-- Item 1 -->
                 <div class="col-md-3 col-sm-6 mb-sm-50 ft-item ft-square-frame-dark wow zoomIn" data-wow-duration=".6s" data-wow-delay=".3s">
-                    <a href=#><span style="background: url(<cms:show topic_image1 />) no-repeat 0 100%; background-position: center; "></span></a>
+                    <a href=<cms:show topic1_link />><span style="background: url(<cms:show topic_image1 />) no-repeat 0 100%; background-position: center; "></span></a>
                     <h5><cms:show topic1_title /></h5>
                     <p><cms:show topic1_content /></p>
                 </div>
                 <!-- Item 2 -->
                 <div class="col-md-3 col-sm-6 mb-sm-50 ft-item ft-square-frame-dark wow zoomIn" data-wow-duration=".6s">
-                    <a href=#><span style="background: url(<cms:show topic_image2 />) no-repeat 0 100%; background-position: center; "></span></a>
+                    <a href=<cms:show topic2_link />><span style="background: url(<cms:show topic_image2 />) no-repeat 0 100%; background-position: center; "></span></a>
                     <h5><cms:show topic2_title /></h5>
                     <p><cms:show topic2_content /></p>
                 </div>
                 <!-- Item 3 -->
                 <div class="col-md-3 col-sm-6 mb-sm-50 ft-item ft-square-frame-dark wow zoomIn" data-wow-duration=".6s">
-                    <a href=#><span style="background: url(<cms:show topic_image3 />) no-repeat 0 100%; background-position: center; "></span></a>
+                    <a href=<cms:show topic3_link />><span style="background: url(<cms:show topic_image3 />) no-repeat 0 100%; background-position: center; "></span></a>
                     <h5><cms:show topic3_title /></h5>
                     <p><cms:show topic3_content /></p>
                 </div>
                 <!-- Item 4 -->
                 <div class="col-md-3 col-sm-6 mb-sm-50 ft-item ft-square-frame-dark wow zoomIn" data-wow-duration=".6s" data-wow-delay=".3s">
-                    <a href=#><span style="background: url(<cms:show topic_image4 />) no-repeat 0 100%; background-position: center; "></span></a>
+                    <a href=<cms:show topic4_link />><span style="background: url(<cms:show topic_image4 />) no-repeat 0 100%; background-position: center; "></span></a>
                     <h5><cms:show topic4_title /></h5>
                     <p><cms:show topic4_content /></p>
                 </div>
