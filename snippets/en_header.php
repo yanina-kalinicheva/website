@@ -32,13 +32,13 @@
                                 <div class="col-lg-6 mb-sm-30">
                                     <li class="dropdown-header">Economic Cooperation</li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">Cultural Events</a></li>
+                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Cultural Events</a></li>
                                 </div>
                                 <!-- Education -->
                                 <div class="col-lg-6 mb-sm-30">
                                     <li class="dropdown-header">Culture & Education</li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">Study in Russia</a></li>
+                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Study in Russia</a></li>
                                 </div>
                             </div>
                             <!-- / .row -->
@@ -56,17 +56,17 @@
                                 <div class="col-lg-6 mb-sm-30">
                                     <li class="dropdown-header">Russian visa</li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">Important Info</a></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">General rules</a></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">Visa fee</a></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">Visa application</a></li>
+                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Important Info</a></li>
+                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">General rules</a></li>
+                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Visa fee</a></li>
+                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Visa application</a></li>
                                 </div>
                                 <!-- Legalization -->
                                 <div class="col-lg-6 mb-sm-30">
                                     <li class="dropdown-header">Legalization</li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">Legalize documents</a></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">How to</a></li>
+                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Legalize documents</a></li>
+                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">How to</a></li>
                                 </div>
                             </div>
                             <!-- / .row -->
@@ -84,7 +84,7 @@
                                 <div class="col-lg-6 mb-sm-30">
                                     <li class="dropdown-header">Additional Information</li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">Links</a></li>
+                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Links</a></li>
                                 </div>
                             </div>
                             <!-- / .row -->

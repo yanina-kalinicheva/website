@@ -30,15 +30,15 @@
                             <div class="row">
                                 <!-- Culture -->
                                 <div class="col-lg-6 mb-sm-30">
-                                    <li class="dropdown-header">Экономическое сотрудничество</li>
+                                    <li class="dropdown-header">Экономика</li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">Мероприятия</a></li>
+                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Мероприятия</a></li>
                                 </div>
                                 <!-- Education -->
                                 <div class="col-lg-6 mb-sm-30">
                                     <li class="dropdown-header">Культура и образование</li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">Обучение в России</a></li>
+                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Обучение в России</a></li>
                                 </div>
                             </div>
                             <!-- / .row -->
@@ -52,21 +52,31 @@
 		  Консульские<br>Вопросы<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <div class="row">
-                                <!-- Russian visa -->
+                                <!-- Reccomendations -->
                                 <div class="col-lg-6 mb-sm-30">
-                                    <li class="dropdown-header">Российская Виза</li>
+                                    <li class="dropdown-header">Рекоммендации</li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">Important Info</a></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">General rules</a></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">Visa fee</a></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">Visa application</a></li>
+                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Миграционные<br><br>правила<br><br>Тайваня</a></li>
+                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Медицинская<br><br>помощь</a></li>
+                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Правила<br><br>пребывания на<br><br>Тайване</a></li>
+                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Если Вы стали<br><br>жертвой<br><br>преступления</a></li>
+									<li><a href="<?php echo $langFolder. 'text_page.php'; ?>">В случае<br><br>задержания или<br><br>ареста</a></li>
+									<li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Перевод<br><br>денежных<br><br>средств</a></li>
+									<li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Перемещение<br><br>через границу<br><br>гробов с телами<br><br>и урн с прахом<br><br>умерших</a></li>
                                 </div>
-                                <!-- Legalization -->
+                                <!-- Consular -->
                                 <div class="col-lg-6 mb-sm-30">
-                                    <li class="dropdown-header">Легализация</li>
+                                    <li class="dropdown-header">Консульский Отдел</li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">Легализация<br><br>документов</a></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">How to</a></li>
+                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Нотариат<br><br>документов</a></li>
+                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">ЗАГС</a></li>
+									<li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Виза в Россию</a></li>
+									<li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Тарифы</a></li>
+									<li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Загранпаспорт</a></li>
+									<li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Легализация</a></li>
+									<li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Вопросы<br><br>гражданства</a></li>
+									<li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Консульский<br><br>учет</a></li>
+									<li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Истребование<br><br>документов</a></li>
                                 </div>
                             </div>
                             <!-- / .row -->
@@ -84,7 +94,7 @@
                                 <div class="col-lg-6 mb-sm-30">
                                     <li class="dropdown-header">Additional Information</li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>" target="_blank">Links</a></li>
+                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Links</a></li>
                                 </div>
                             </div>
                             <!-- / .row -->
