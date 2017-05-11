@@ -11,7 +11,7 @@
         <!-- / .navbar-header -->
         <!-- Navbar Links -->
         <div id="navbar" class="navbar-collapse collapse">
-            <div class="col-xs-9" style="font-size: 18px;">
+            <div class="col-xs-9" style="font-size: 18px; font-family: 標楷體,DFKai-sb,BiauKai,'AR PL UKai TW';">
                 <ul class="nav navbar-nav">
                     <!-- Home -->
                     <li><a style="color:black;" href=<?php echo $langFolder. 'main.php'; ?>> 首頁<span class="sr-only"></span></a></li>
@@ -101,7 +101,7 @@
             </div>
             <!-- Navbar Links Right -->
             <div class="col-xs-3" style="font-size: 14px;">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right" style="font-family: 標楷體,DFKai-sb,BiauKai,'AR PL UKai TW';">
                     <!-- FAQ -->
                     <li><a style="color:black;" href=<?php echo $langFolder. 'faq.php'; ?>>問題集<span class="sr-only"></span></a></li>
                     <!-- / FAQ -->
