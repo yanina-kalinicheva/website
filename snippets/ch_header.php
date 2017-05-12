@@ -11,7 +11,7 @@
         <!-- / .navbar-header -->
         <!-- Navbar Links -->
         <div id="navbar" class="navbar-collapse collapse">
-            <div class="col-xs-9" style="font-size: 18px; font-family: 標楷體,DFKai-sb,BiauKai,'AR PL UKai TW';">
+            <div class="col-xs-9" style="font-size: 24px; font-family: 標楷體,DFKai-sb,BiauKai,'AR PL UKai TW';">
                 <ul class="nav navbar-nav">
                     <!-- Home -->
                     <li><a style="color:black;" href=<?php echo $langFolder. 'main.php'; ?>> 首頁<span class="sr-only"></span></a></li>
