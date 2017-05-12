@@ -1,8 +1,7 @@
 <?php require_once( '../couch/cms.php' ); ?>
 <cms:template title='Новости' order='4'>
 	<cms:editable name='header_image' label='Header Image' desc='Upload header image here' type='image' />
-	<cms:editable name='greetings' label='Greeting' desc='Enter greetings to the page title' type='text'>Latest posts</cms:editable>
-
+	<cms:editable name='greetings' label='Greeting' desc='Enter greetings to the page title' type='text' />
 </cms:template>
 
 <!doctype html>
@@ -84,7 +83,7 @@
         <!-- / embed news list view -->
         <!-- ========== Footer ========== -->
  
-		<cms:embed 'ru_footer.html' />
+		<?php include('../couch/snippets/ru_footer.php'); ?>
  
         <!-- ========== Scripts ========== -->
         <script src="../assets/js/vendor/jquery-2.1.4.min.js"></script>

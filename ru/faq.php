@@ -1,8 +1,8 @@
 <?php require_once( '../couch/cms.php' ); ?>
 <cms:template title='Часто задаваемые вопросы' order='14'>
 	<cms:editable name='header_image' label='Header Image' desc='Upload header image here' type='image' />
-	<cms:editable name='greetings' label='Greeting' desc='Enter greetings to the page title' type='text'>you have questions, we have answers</cms:editable>
-	<cms:editable name='title' label='Title' desc='Enter title to the page' type='text'>frequently asked questions</cms:editable>
+	<cms:editable name='greetings' label='Greeting' desc='Enter greetings to the page title' type='text' />
+	<cms:editable name='title' label='Title' desc='Enter title to the page' type='text' />
 	<cms:editable name='questions' label='Questions' desc='Edit text to change the content, click "source" to see the code and add more groups/questions' type='richtext' />  
 
 </cms:template>
@@ -105,7 +105,7 @@
 
 		<!-- ========== Footer Widgets ========== -->
         
-		<cms:embed 'ru_footer.html' />
+		<?php include('../couch/snippets/ru_footer.php'); ?>
     
         <!-- ========== Scripts ========== -->
 

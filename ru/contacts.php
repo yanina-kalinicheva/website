@@ -1,9 +1,9 @@
 <?php require_once( '../couch/cms.php' ); ?>
 <cms:template title='Контакты' order='11'>
 	<cms:editable name='header_image' label='Header Image' desc='Upload header image here' type='image' />
-	<cms:editable name='greetings' label='Greeting' desc='Enter greetings to the page header' type='text'>We love to hear from you</cms:editable>
-	<cms:editable name='title' label='Title' desc='Enter title to the page' type='text'>Say hello</cms:editable>
-	<cms:editable name='subtitle' label='Subtitle' desc='Enter subtitle under the page title' type='text'>We love to discuss your idea</cms:editable>
+	<cms:editable name='greetings' label='Greeting' desc='Enter greetings to the page header' type='text' />
+	<cms:editable name='title' label='Title' desc='Enter title to the page' type='text' />
+	<cms:editable name='subtitle' label='Subtitle' desc='Enter subtitle under the page title' type='text' />
 	<cms:editable name='phone' label='Phone' type='text'>(+886-2) 8780-3011</cms:editable>
 	<cms:editable name='address' label='Address' type='text'>9F, No. 2, Section 5, XinYi Road, Taipei City, Taiwan 11049 (Moscow-Taipei Commission)</cms:editable>
 	<cms:editable name='fax' label='Fax' type='text'>(+886-2) 8780-2511</cms:editable>

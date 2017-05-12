@@ -1,7 +1,7 @@
 <?php require_once( '../couch/cms.php' ); ?>
 <cms:template title='О нас' order='8'>
 	<cms:editable name='header_image' label='Header Image' desc='Upload header image here' type='image' />
-	<cms:editable name='greetings' label='Greeting' desc='Enter greetings to the page header' type='text'>Добро пожаловать</cms:editable>
+	<cms:editable name='greetings' label='Greeting' desc='Enter greetings to the page header' type='text' />
 	<cms:editable name='article_image' label='Image' width='750' height='400' type='image' />
 	<cms:editable name='article_title' label='Article Title' desc='Enter article title here' type='text'>О нас</cms:editable>
 	<cms:editable name='article_content' label='Article Content' desc='Enter main content of the article here' type='richtext' />	
@@ -124,7 +124,7 @@
 
 		<!-- ========== Footer Widgets ========== -->
         
-		<cms:embed 'ru_footer.html' />
+		<?php include('../couch/snippets/ru_footer.php'); ?>
 
         <!-- ========== Scripts ========== -->
 

@@ -2,7 +2,7 @@
 <cms:template title='Представительство МТК в Тайбэе' order='1'>
 	<cms:editable name='header_image' label='Header Image' desc='Upload header image here' type='image' />
 	<cms:editable name='title' label='Title' desc='Enter title to the page' type='text'>Hot topics</cms:editable>
-	<cms:editable name='subtitle' label='Subtitle' desc='Enter subtitle under the page title' type='text'>You may find this useful</cms:editable>
+	<cms:editable name='subtitle' label='Subtitle' desc='Enter subtitle under the page title' type='text' />
     <cms:editable name='topic1_image' label='Topic 1 Image' desc='Upload image of the first topic here' type='image' />
 	<cms:editable name='topic1_title' label='Topic 1 title' desc='Enter title of the first topic' type='text' />
 	<cms:editable name='topic1_content' label='Topic 1 content' desc='Enter short description of first topic' type='text' />
