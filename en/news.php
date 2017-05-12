@@ -83,7 +83,7 @@
         <!-- / embed news list view -->
         <!-- ========== Footer ========== -->
 
-		<cms:embed 'en_footer.html' />
+		<?php include('../couch/snippets/en_footer.php'); ?>
 		
         <!-- ========== Scripts ========== -->
         <script src="../assets/js/vendor/jquery-2.1.4.min.js"></script>

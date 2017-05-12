@@ -101,7 +101,7 @@
                 <div class="col-md-12 blog-post-single wow fadeIn" data-wow-delay=".1s" data-wow-duration="2s">
 
                   <!-- Image -->
-                  <img class="img-responsive post-img" src="<cms:show article_image />" alt="Blog Post 1">
+                  <img class="img-responsive post-img" src="<cms:show article_image />">
 
                   <!-- Title -->
                   <h2 class="post-title"><cms:show article_title /></h2>
@@ -121,7 +121,7 @@
 
 		<!-- ========== Footer Widgets ========== -->
         
-        <cms:embed 'en_footer.html' />
+        <?php include('../couch/snippets/en_footer.php'); ?>
 
         <!-- ========== Scripts ========== -->
 

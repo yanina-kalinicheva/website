@@ -122,7 +122,8 @@
 
 
 		<!-- ========== Footer Widgets ========== -->
-        <cms:embed 'en_footer.html' />
+		
+        <?php include('../couch/snippets/en_footer.php'); ?>
 
         <!-- ========== Scripts ========== -->
 
