@@ -2,8 +2,6 @@
 <cms:template title='聯絡方式' order='13'>
 	<cms:editable name='header_image' label='Header Image' desc='Upload header image here' type='image' />
 	<cms:editable name='greetings' label='Greeting' desc='Enter greetings to the page header' type='text' />
-	<cms:editable name='title' label='Title' desc='Enter title to the page' type='text' />
-	<cms:editable name='subtitle' label='Subtitle' desc='Enter subtitle under the page title' type='text' />
 	<cms:editable name='phone' label='Phone' type='text'>(+886-2) 8780-3011</cms:editable>
 	<cms:editable name='address' label='Address' type='text'>11049 台灣台北市信義區信義路五段2號9樓 （莫北協代表處）</cms:editable>
 	<cms:editable name='fax' label='Fax' type='text'>(+886-2) 8780-2511</cms:editable>
@@ -97,12 +95,7 @@
         <!-- ========== Contact ========== -->
 
         <section id="contact" class="section contact-1" style="padding-top: 80px; padding-bottom: 50px">
-          
-          <header class="sec-heading">
-            <h2><cms:show title /></h2>
-            <span class="subheading"><cms:show subtitle /></span>
-          </header>
-          
+                   
           <div class="contact-wrapper">
             <!-- Map -->
             <div id="map-canvas" class="gmap map-boxed"></div>
