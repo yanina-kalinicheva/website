@@ -2,7 +2,7 @@
 <cms:template title='Contacts' order='12'>
 	<cms:editable name='header_image' label='Header Image' desc='Upload header image here' type='image' />
 	<cms:editable name='greetings' label='Greeting' desc='Enter greetings to the page header' type='text' />
-	<cms:editable name='phone' label='Phone' type='text'>(+886-2) 8780-3011</cms:editable>
+	<cms:editable name='phone' label='Phone' toolbar='full' type='richtext' />
 	<cms:editable name='address' label='Address' type='text'>9F, No. 2, Section 5, XinYi Road, Taipei City, Taiwan 11049 (Moscow-Taipei Commission)</cms:editable>
 	<cms:editable name='fax' label='Fax' type='text'>(+886-2) 8780-2511</cms:editable>
 	<cms:editable name='open_hours' label='Open Hours' toolbar='full' type='richtext' />
@@ -109,38 +109,37 @@
               <div class="row ws-m">
 
                 <!-- Address Info -->
-                <div class="col-xs-offset-1 col-xs-11 col-md-offset-2 col-md-6 contact-info-wrapper">
+                <div class="col-xs-offset-1 col-xs-11 col-md-offset-2 col-md-6 contact-info-wrapper" style="padding-top: 30px; padding-bottom: 30px; padding-left: 60px; padding-right: 60px">
                   <address>
                     <div class="row">
 
-                      <!-- Phone -->
-                      <div class="col-sm-6 address-group">
-                        <span>Phone</span>
-                        <p><cms:show phone /></p>
+                      <!-- Left -->
+                      <div class="col-sm-5 address-group" style="padding-right: 30px">
+					  
+						<div class="row" style="padding-bottom: 20px">
+							<span>Address</span>
+							<p style="font-size:14px;"><a href="https://www.google.ru/maps/place/No.+2,+Section+5,+Xinyi+Road,+Xinyi+District,+Taipei+City,+Taiwan+110/@25.0328924,121.5576395,17z/data=!3m1!4b1!4m5!3m4!1s0x3442abc9ff8bf12f:0x7b514dde604f3a5e!8m2!3d25.0328924!4d121.5598282">
+							  <cms:show address /></a></p>
+						</div>
+						
+						<div class="row" style="padding-bottom: 20px">
+							<span>Phone</span>
+							<p><cms:show phone /></p>
+						</div>
+						
+						<div class="row" style="padding-bottom: 20px">
+							<span>Fax</span>
+							<p><cms:show fax /></p>
+						</div>
+						
                       </div>
 
-                      <!-- Address -->
-                      <div class="col-sm-5 address-group">
-                        <span>Address</span>
-                        <p><cms:show address /></p>
-                      </div>
-
-                    </div><!-- / .row -->
-
-                    <div class="row">
-
-                      <!-- Fax -->
-                      <div class="col-sm-6 address-group">
-                        <span>Fax</span>
-                        <p><cms:show fax /></p>
-                      </div>
-
-                      <!-- Hours -->
-                      <div class="col-sm-5 address-group">
+					  <!-- Right -->
+                      <div class="col-sm-7 address-group">
                         <span>Open Hours</span>
                         <cms:show open_hours />
                       </div>
-
+					  
                     </div><!-- / .row -->
 
                     <!-- Show Map Button -->
@@ -161,11 +160,10 @@
 				    <!-- Subject -->
 					<div class="form-group">
 						<select class="form-control" id="select-form">
-						<option>Visa</option>
-						<option>Legalization</option>
-						<option>Education</option>
-						<option>Economy</option>
 						<option>Other</option>
+						<option>Consular</option>
+						<option>Culture and education</option>
+						<option>Trade and economic</option>
 						</select>
 						<label for="select-form">Select a subject</label>
 					</div>
