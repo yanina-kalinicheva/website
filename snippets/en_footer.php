@@ -16,13 +16,13 @@
 	  </div><!-- / .col-md-3 -->
 
 	  <!-- Twitter Feed -->
-	  <div class="col-md-6 col-sm-4 mb-sm-100 style="margin-bottom:0px">
+	  <div class="col-md-6 col-sm-4 mb-sm-100" style="margin-bottom:0px">
 		<div class="widget twitter-widget">
 		  <h5 class="header-widget">Twitter Feed</h5>
 		  <ul>
 
 			<a class="twitter-timeline" href="https://twitter.com/mtcintaipei"  data-width="500"  
-			data-height="200">Tweets by mtcintaipei</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>				
+			data-height="200" data-theme="dark">Tweets by mtcintaipei</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>				
   
 		  </ul>
 		</div><!-- / .widget -->
