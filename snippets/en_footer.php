@@ -5,8 +5,16 @@
 	  <div class="col-md-6 col-sm-4 mb-sm-100" style="margin-bottom:0px">
 		<div class="widget about-widget">
 		  <h5 class="header-widget">Contacts</h5>
-		  <p>Address: Taiwan, Taipei, Fl.9, No.2, Sec.5, Hsinyi Rd., tel. (+886-2) 8780-3011, fax. (+886-2) 8780-2511, info@mtc.org.tw</p>
-		  <a href="contacts.php">Map</a>
+		  <p>
+		    <a href="https://www.google.ru/maps/place/No.+2,+Section+5,+Xinyi+Road,+Xinyi+District,+Taipei+City,+Taiwan+110/@25.0328924,121.5576395,17z/data=!3m1!4b1!4m5!3m4!1s0x3442abc9ff8bf12f:0x7b514dde604f3a5e!8m2!3d25.0328924!4d121.5598282">
+			Address: Taiwan, Taipei, Fl.9, No.2, Sec.5, Hsinyi Rd.</a>
+			<br>
+			<a href="tel:+886287803011">Tel. (+886-2) 8780-3011</a>
+			<br>
+			Fax (+886-2) 8780-2511
+			<br>
+			<a href="mailto:info@mtc.org.tw">info@mtc.org.tw</a>
+		  </p>
 
 		  <ul class="social-links">
 			<li><a href="https://www.facebook.com/mtcintaipei"><i class="fa fa-facebook"></i></a></li>
@@ -21,7 +29,7 @@
 		  <h5 class="header-widget">Twitter Feed</h5>
 		  <ul>
 
-			<a class="twitter-timeline" href="https://twitter.com/mtcintaipei"  data-width="500"  
+			<a class="twitter-timeline" href="https://twitter.com/mtcintaipei"  data-width="700"  
 			data-height="200" data-theme="dark">Tweets by mtcintaipei</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>				
   
 		  </ul>
