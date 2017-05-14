@@ -137,10 +137,25 @@
                                 .gsc-input-box-focus,
                                 .gsc-search-button,
                                 input.gsc-search-button-v2,
-                                #gs_tti50 {
+                                .gsib_b, .gsst_b, .gsst_a, 
+                                #gs_tti50, #gsc-i-id1, #gs_id50{
                                     box-sizing: content-box;
                                     line-height: normal;
                                     margin-top: 0px;
+                                }
+                                .gsib_b, .gsst_b, .gsst_a, .gscb_a, 
+                                #gsc-i-id1{
+                                    padding: 0px 0px 0px 0px;
+                                }
+                                .navbar .navbar-nav .dropdown .dropdown-menu li .gsc-search-box a{
+                                    padding: 0px 0px 0px 0px;
+                                    line-height: normal;
+                                }
+                                .gscb_a{
+                                    box-sizing: border-box;
+                                    line-height: normal;
+                                    margin-top: 0px;
+                                    height: 27px;
                                 }
                                 </style>
                                 <script>
