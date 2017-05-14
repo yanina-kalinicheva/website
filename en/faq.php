@@ -3,7 +3,7 @@
 	<cms:editable name='header_image' label='Header Image' desc='Upload header image here' type='image' />
 	<cms:editable name='greetings' label='Greeting' desc='Enter greetings to the page title' type='text' />
 	<cms:editable name='title' label='Title' desc='Enter title to the page' type='text'>frequently asked questions</cms:editable>
-	<cms:editable name='questions' label='Questions' desc='Edit text to change the content, click "source" to see the code and add more groups/questions' type='richtext' />  
+	<cms:editable name='questions' label='Questions' desc='Edit text to change the content, click "source" to see the code and add more groups/questions' toolbar='full' type='richtext' />  
 
 </cms:template>
 

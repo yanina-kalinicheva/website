@@ -5,7 +5,7 @@
 	<cms:editable name='phone' label='Phone' type='text'>(+886-2) 8780-3011</cms:editable>
 	<cms:editable name='address' label='Address' type='text'>11049 台灣台北市信義區信義路五段2號9樓 （莫北協代表處）</cms:editable>
 	<cms:editable name='fax' label='Fax' type='text'>(+886-2) 8780-2511</cms:editable>
-	<cms:editable name='open_hours' label='Open Hours' type='richtext' />
+	<cms:editable name='open_hours' label='Open Hours' toolbar='full' type='richtext' />
 
 </cms:template>
 

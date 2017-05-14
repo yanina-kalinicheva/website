@@ -4,7 +4,7 @@
 	<cms:editable name='greetings' label='Greeting' desc='Enter greetings to the page header' type='text' />
 	<cms:editable name='article_image' label='Image' width='750' height='400' type='image' />
 	<cms:editable name='article_title' label='Article Title' desc='Enter article title here' type='text'>About us</cms:editable>
-	<cms:editable name='article_content' label='Article Content' desc='Enter main content of the article here' type='richtext' />	
+	<cms:editable name='article_content' label='Article Content' desc='Enter main content of the article here' toolbar='full' type='richtext' />	
 </cms:template>
 
 <!doctype html>

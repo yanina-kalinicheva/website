@@ -5,7 +5,7 @@
 	<cms:editable name='phone' label='Phone' type='text'>(+886-2) 8780-3011</cms:editable>
 	<cms:editable name='address' label='Address' type='text'>9F, No. 2, Section 5, XinYi Road, Taipei City, Taiwan 11049 (Moscow-Taipei Commission)</cms:editable>
 	<cms:editable name='fax' label='Fax' type='text'>(+886-2) 8780-2511</cms:editable>
-	<cms:editable name='open_hours' label='Open Hours' type='richtext' />
+	<cms:editable name='open_hours' label='Open Hours' toolbar='full' type='richtext' />
 
 </cms:template>
 
