@@ -192,25 +192,37 @@ $headers = 'From: '.$email_from."\r\n".
  
 'X-Mailer: PHP/' . phpversion();
 
-if ($subject == "Visa") {
+if ($subject == "Other") {
 
-  mail("b02902060@ntu.edu.tw", $email_subject, $email_message, $headers);  
+  mail("yanina.kalinicheva@gmail.com", $email_subject, $email_message, $headers);  
 
-} elseif ($subject == "Legalization") {
+} elseif ($subject == "Другое") {
 
-  mail("bxj840124@gmail.com", $email_subject, $email_message, $headers);  
-
-} elseif ($subject == "Education") {
-
-  mail("bxj840124@gmail.com", $email_subject, $email_message, $headers);  
-
-} elseif ($subject == "Economy") {
-
-  mail("bxj840124@gmail.com", $email_subject, $email_message, $headers);  
+  mail("info@mtc.org.tw", $email_subject, $email_message, $headers);  
   
-} elseif ($subject == "Other") {
+} elseif ($subject == "Consular") {
 
-  mail("bxj840124@gmail.com", $email_subject, $email_message, $headers);  
+  mail("c@mtc.org.tw", $email_subject, $email_message, $headers);  
+  
+} elseif ($subject == "Консульские вопросы (паспорта, справки, визы, легализация)") {
+
+  mail("c@mtc.org.tw", $email_subject, $email_message, $headers);  
+
+} elseif ($subject == "Culture and education") {
+
+  mail("a@mtc.org.tw", $email_subject, $email_message, $headers);  
+  
+} elseif ($subject == "Вопросы культуры и образования") {
+
+  mail("yanina.kalinicheva@gmail.com", $email_subject, $email_message, $headers);  
+  
+} elseif ($subject == "Trade and economic") {
+
+  mail("e@mtc.org.tw", $email_subject, $email_message, $headers);  
+ 
+} elseif ($subject == "Торгово-экономические вопросы") {
+
+  mail("e@mtc.org.tw", $email_subject, $email_message, $headers);  
   
 }
 
