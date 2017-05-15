@@ -117,10 +117,10 @@ if(isset($_POST['email'])) {
   }
  
     $string_exp1 = "/^[A-Za-z .'-]+$/";
-    $string_exp2 = "/^[\u4e00-\u9fa5 ]+$/"; 
+    $string_exp2 = "/^[\x{4e00}-\x{9fa5}]{2,5}$/u"; 
     $string_exp3 = "/^[а-яА-ЯЁё ]+$/";
  
-  if(!preg_match($string_exp1,$name) && !preg_match($string_exp2,$name)) {
+  if(!preg_match($string_exp1,$name) && !preg_match($string_exp2,$name) && !preg_match($string_exp3,$name)) {
     global $lang;
     if($lang == "ch") {
 
