@@ -194,7 +194,7 @@ $headers = 'From: '.$email_from."\r\n".
 
 if ($subject == "Other") {
 
-  mail("yanina.kalinicheva@gmail.com", $email_subject, $email_message, $headers);  
+  mail("bxj840124@gmail.com", $email_subject, $email_message, $headers);  
 
 } elseif ($subject == "Другое") {
 
@@ -226,11 +226,35 @@ if ($subject == "Other") {
   
 }
 
- ?>
+if($lang == "ch") {
+    ?>
 
- <div class="alert alert-success alert-dismissible wow fadeInUp" role="alert">
-   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-   Your message has been sent.
- </div>
+  <div class="alert alert-success alert-dismissible wow fadeInUp" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    您的訊息已寄出.
+  </div>
 
- <?php } ?>
+  <?php
+
+} elseif($lang == "en") {
+  ?>
+
+  <div class="alert alert-success alert-dismissible wow fadeInUp" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    Your message has been sent.
+  </div>
+
+ <?php
+
+} elseif($lang == "ru") {
+  ?>
+
+  <div class="alert alert-success alert-dismissible wow fadeInUp" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    Your message has been sent.
+  </div>
+
+ <?php
+}
+
+  } ?>
