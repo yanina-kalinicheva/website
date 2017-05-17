@@ -194,7 +194,7 @@ $headers = 'From: '.$email_from."\r\n".
 
 if ($subject == "Other") {
 
-  mail("bxj840124@gmail.com", $email_subject, $email_message, $headers);  
+  mail("info@mtc.org.tw", $email_subject, $email_message, $headers);  
 
 } elseif ($subject == "Другое") {
 
@@ -214,7 +214,7 @@ if ($subject == "Other") {
   
 } elseif ($subject == "Вопросы культуры и образования") {
 
-  mail("yanina.kalinicheva@gmail.com", $email_subject, $email_message, $headers);  
+  mail("a@mtc.org.tw", $email_subject, $email_message, $headers);  
   
 } elseif ($subject == "Trade and economic") {
 
@@ -251,7 +251,7 @@ if($lang == "ch") {
 
   <div class="alert alert-success alert-dismissible wow fadeInUp" role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    Your message has been sent.
+    Ваше сообщение отправлено.
   </div>
 
  <?php
