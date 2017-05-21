@@ -120,6 +120,9 @@
                                 .gsc-control-cse .gsc-input-box {
                                     height: inherit;
                                 }
+                                .gsc-input-box {
+                                    height: 31px;
+                                }
                                 
                                 input.gsc-input,
                                 .gsc-input-box,
@@ -131,11 +134,13 @@
                                 #gs_tti50, #gsc-i-id1, #gs_id50{
                                     box-sizing: content-box;
                                     line-height: normal;
+                                    vertical-align: middle;
                                     margin-top: 0px;
                                 }
                                 .gsib_b, .gsst_b, .gsst_a, .gscb_a, 
                                 #gsc-i-id1{
                                     padding: 0px 0px 0px 0px;
+                                    vertical-align: middle;
                                 }
                                 .navbar .navbar-nav .dropdown .dropdown-menu li .gsc-search-box a{
                                     padding: 0px 0px 0px 0px;
@@ -145,7 +150,6 @@
                                     box-sizing: border-box;
                                     line-height: normal;
                                     margin-top: 0px;
-                                    height: 27px;
                                 }
                                 </style>
                                 <script>
