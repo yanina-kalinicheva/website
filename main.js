@@ -64,7 +64,7 @@ var previousScroll = 0;
 			
 			var currentScroll = $(this).scrollTop();
 	
-			if (currentScroll > 20) {// && currentScroll < $(document).height() - $(window).height()){
+			if (currentScroll > 40) {// && currentScroll < $(document).height() - $(window).height()){
 				if (currentScroll > previousScroll){
 					$('nav').removeClass('navbar-trans', 300);
 					$('nav').removeClass('navbar-trans-dark');
