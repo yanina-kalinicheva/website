@@ -54,20 +54,37 @@
 /* --------------------------------------------------
 	Navigation | Navbar
 -------------------------------------------------- */
+
+var previousScroll = 0;
 	
 	function initNavbar(){
 
 		// Sticky Nav & Transparent Background
 		$(window).scroll(function(){
 			
-			if ($(window).scrollTop() > 20) {
-				$('nav').removeClass('navbar-trans', 300);
-				$('nav').removeClass('navbar-trans-dark');
-				$('nav').addClass('navbar-small', 300);
+			var currentScroll = $(this).scrollTop();
+	
+			if (currentScroll > 20) {// && currentScroll < $(document).height() - $(window).height()){
+				if (currentScroll > previousScroll){
+					$('nav').removeClass('navbar-trans', 300);
+					$('nav').removeClass('navbar-trans-dark');
+					$('nav').addClass('navbar-hide', 300);
+				}
+				else {
+					$('nav').removeClass('navbar-trans', 300);
+					$('nav').removeClass('navbar-trans-dark');
+					$('nav').removeClass('navbar-hide', 300);
+					$('nav').addClass('navbar-small', 300);
+										
+				}
+				previousScroll = currentScroll;
 			}
-			else {
+			else 
+			{
 				$('nav:not(.mobile-nav)').addClass('navbar-trans', 300);
 				$('nav').removeClass('navbar-small', 300);
+				$('nav').removeClass('navbar-hide', 300);
+
 
 				if ($('nav').hasClass('trans-helper')) {
 					$('nav:not(.mobile-nav)').addClass('navbar-trans-dark');
