@@ -1,12 +1,7 @@
 <?php 
 
 if(isset($_POST['email'])) {
- 
-     
- 
-    // ADD YOUR EMAIL WHERE YOU WANT TO RECIEVE THE MESSAGES
- 
-    //$email_to = "yanina.kalinicheva@gmail.com";
+
 
     $subject = $_POST['subject-option'];
  
@@ -97,68 +92,64 @@ if(isset($_POST['email'])) {
  
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
  
-  if(!preg_match($email_exp,$email_from)) {
-    global $lang;
-    if($lang == "ch") {
+	if(!preg_match($email_exp,$email_from)) {
+	    global $lang;
+		if($lang == "ch") {
 
-      $error_message .= '您輸入的電子郵件地址格式有誤ˋ.<br />';
+		  $error_message .= '您輸入的電子郵件地址格式有誤ˋ.<br />';
 
-    } else if ($lang == "en") {
+		} else if ($lang == "en") {
 
-      $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+		  $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
 
-    } else if ($lang == "ru") {
+		} else if ($lang == "ru") {
 
-      $error_message .= 'Указанный адрес электронной почты недействителен.<br />';
+		  $error_message .= 'Указанный адрес электронной почты недействителен.<br />';
 
-    } 
- 
- 
-  }
+		} 
+	}
  
     $string_exp1 = "/^[A-Za-z .'-]+$/";
     $string_exp2 = "/^[\x{4e00}-\x{9fa5}]{2,5}$/u"; 
     $string_exp3 = "/^[а-яА-ЯЁё ]+$/";
  
-  if(!preg_match($string_exp1,$name) && !preg_match($string_exp2,$name) && !preg_match($string_exp3,$name)) {
-    global $lang;
-    if($lang == "ch") {
+	if(!preg_match($string_exp1,$name) && !preg_match($string_exp2,$name) && !preg_match($string_exp3,$name)) {
+		global $lang;
+		if($lang == "ch") {
 
-      $error_message .= '您輸入的名字格式有誤ˋ.<br />';
+		  $error_message .= '您輸入的名字格式有誤ˋ.<br />';
 
-    } else if ($lang == "en") {
- 
-      $error_message .= 'The First Name you entered does not appear to be valid.<br />';
+		} else if ($lang == "en") {
 
-    } else if ($lang == "ru") {
- 
-      $error_message .= 'Введенное имя недействительно.<br />';
-    }
- 
-  }
- 
-  if(strlen($message) < 2) {
-    global $lang;
-    if($lang == "ch") {
+		  $error_message .= 'The First Name you entered does not appear to be valid.<br />';
 
-      $error_message .= '您輸入的內容格式有誤ˋ.<br />';
+		} else if ($lang == "ru") {
 
-    } else if ($lang == "en") {
+		  $error_message .= 'Введенное имя недействительно.<br />';
+		}
+	}
  
-      $error_message .= 'The message you entered do not appear to be valid.<br />';
-    
-    } else if ($lang == "ru") {
+	if(strlen($message) < 2) {
+		global $lang;
+		if($lang == "ch") {
+
+		  $error_message .= '您輸入的內容格式有誤ˋ.<br />';
+
+		} else if ($lang == "en") {
+
+		  $error_message .= 'The message you entered do not appear to be valid.<br />';
+
+		} else if ($lang == "ru") {
+
+		  $error_message .= 'Введенное сообщение недействительно.<br />';
+		}
+	}
  
-      $error_message .= 'Введенное сообщение недействительно.<br />';
-    }
- 
-  }
- 
-  if(strlen($error_message) > 0) {
- 
-    died($error_message);
- 
-  }
+	if(strlen($error_message) > 0) {
+
+		died($error_message);
+
+	}
  
     $email_message = "Form details below.\n\n";
  
@@ -184,77 +175,77 @@ if(isset($_POST['email'])) {
  
      
  
-// create email headers
- 
-$headers = 'From: '.$email_from."\r\n".
- 
-'Reply-To: '.$email_from."\r\n" .
- 
-'X-Mailer: PHP/' . phpversion();
+	// create email headers
+	 
+	$headers = 'From: '.$email_from."\r\n".
+	 
+	'Reply-To: '.$email_from."\r\n" .
+	 
+	'X-Mailer: PHP/' . phpversion();
 
-if ($subject == "Other") {
+	if ($subject == "Other") {
 
-  mail("info@mtc.org.tw", $email_subject, $email_message, $headers);  
+	  mail("info@mtc.org.tw", $email_subject, $email_message, $headers);  
 
-} elseif ($subject == "Другое") {
+	} elseif ($subject == "Другое") {
 
-  mail("info@mtc.org.tw", $email_subject, $email_message, $headers);  
-  
-} elseif ($subject == "Consular") {
+	  mail("info@mtc.org.tw", $email_subject, $email_message, $headers);  
+	  
+	} elseif ($subject == "Consular") {
 
-  mail("c@mtc.org.tw", $email_subject, $email_message, $headers);  
-  
-} elseif ($subject == "Консульские вопросы (паспорта, справки, визы, легализация)") {
+	  mail("c@mtc.org.tw", $email_subject, $email_message, $headers);  
+	  
+	} elseif ($subject == "Консульские вопросы (паспорта, справки, визы, легализация)") {
 
-  mail("c@mtc.org.tw", $email_subject, $email_message, $headers);  
+	  mail("c@mtc.org.tw", $email_subject, $email_message, $headers);  
 
-} elseif ($subject == "Culture and education") {
+	} elseif ($subject == "Culture and education") {
 
-  mail("a@mtc.org.tw", $email_subject, $email_message, $headers);  
-  
-} elseif ($subject == "Вопросы культуры и образования") {
+	  mail("a@mtc.org.tw", $email_subject, $email_message, $headers);  
+	  
+	} elseif ($subject == "Вопросы культуры и образования") {
 
-  mail("a@mtc.org.tw", $email_subject, $email_message, $headers);  
-  
-} elseif ($subject == "Trade and economic") {
+	  mail("a@mtc.org.tw", $email_subject, $email_message, $headers);  
+	  
+	} elseif ($subject == "Trade and economic") {
 
-  mail("e@mtc.org.tw", $email_subject, $email_message, $headers);  
- 
-} elseif ($subject == "Торгово-экономические вопросы") {
+	  mail("e@mtc.org.tw", $email_subject, $email_message, $headers);  
+	 
+	} elseif ($subject == "Торгово-экономические вопросы") {
 
-  mail("e@mtc.org.tw", $email_subject, $email_message, $headers);  
-  
-}
+	  mail("e@mtc.org.tw", $email_subject, $email_message, $headers);  
+	  
+	}
 
-if($lang == "ch") {
-    ?>
+	if($lang == "ch") {
+		?>
 
-  <div class="alert alert-success alert-dismissible wow fadeInUp" role="alert">
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    您的訊息已寄出.
-  </div>
+	  <div class="alert alert-success alert-dismissible wow fadeInUp" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		您的訊息已寄出.
+	  </div>
 
-  <?php
+	  <?php
 
-} elseif($lang == "en") {
-  ?>
+	} elseif($lang == "en") {
+	  ?>
 
-  <div class="alert alert-success alert-dismissible wow fadeInUp" role="alert">
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    Your message has been sent.
-  </div>
+	  <div class="alert alert-success alert-dismissible wow fadeInUp" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		Your message has been sent.
+	  </div>
 
- <?php
+	 <?php
 
-} elseif($lang == "ru") {
-  ?>
+	} elseif($lang == "ru") {
+	  ?>
 
-  <div class="alert alert-success alert-dismissible wow fadeInUp" role="alert">
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    Ваше сообщение отправлено.
-  </div>
+	  <div class="alert alert-success alert-dismissible wow fadeInUp" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		Ваше сообщение отправлено.
+	  </div>
 
- <?php
-}
+	 <?php
+	}
 
-  } ?>
+} ?>
