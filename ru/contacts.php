@@ -160,10 +160,10 @@
 				    <!-- Subject -->
 					<div class="form-group">
 						<select class="form-control" id="select-form">
-						<option>Другое</option>
 						<option>Консульские вопросы (паспорта, справки, визы, легализация)</option>
 						<option>Вопросы культуры и образования</option>
 						<option>Торгово-экономические вопросы</option>
+						<option>Другое</option>
 						</select>
 						<label for="select-form">Выберите тему</label>
 					</div>

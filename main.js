@@ -872,7 +872,7 @@ function validateField ( field ) {
 	// Test the name field
 	if ( field.attr("name") === "name" ) {
 		if ( id === "name-contact-1-en" ) {
-			if ( !validateLength( value, 2 ) ) {
+			if ( !validateLength( value, 1 ) ) {
 					error = true;
 					errorText += '<i class="fa fa-info-circle"></i> The name is too short!<br>';
 					$('input[name="name"]').addClass('input-error');
@@ -888,7 +888,7 @@ function validateField ( field ) {
 					$('input[name="name"]').removeClass('input-error');
 			}
 		} else if ( id === "name-contact-1-ru" ) {
-			if ( !validateLength( value, 2 ) ) {
+			if ( !validateLength( value, 1 ) ) {
 					error = true;
 					errorText += '<i class="fa fa-info-circle"></i> Имя слишком короткое!<br>';
 					$('input[name="name"]').addClass('input-error');
