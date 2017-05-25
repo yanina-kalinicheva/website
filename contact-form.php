@@ -185,7 +185,7 @@ if(isset($_POST['email'])) {
 
 	if ($subject == "Other") {
 
-	  mail("info@mtc.org.tw", $email_subject, $email_message, $headers);  
+	  mail("yanina.kalinicheva@gmail.com", $email_subject, $email_message, $headers);  
 
 	} elseif ($subject == "Другое") {
 
@@ -199,7 +199,7 @@ if(isset($_POST['email'])) {
 
 	  mail("c@mtc.org.tw", $email_subject, $email_message, $headers);  
 
-	} elseif ($subject == "Culture and education") {
+	} elseif ($subject == "Culture and Education") {
 
 	  mail("a@mtc.org.tw", $email_subject, $email_message, $headers);  
 	  
@@ -207,7 +207,7 @@ if(isset($_POST['email'])) {
 
 	  mail("a@mtc.org.tw", $email_subject, $email_message, $headers);  
 	  
-	} elseif ($subject == "Trade and economic") {
+	} elseif ($subject == "Trade and Economic") {
 
 	  mail("e@mtc.org.tw", $email_subject, $email_message, $headers);  
 	 
