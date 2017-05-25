@@ -159,7 +159,7 @@
               <textarea name='lang' style="display: none">ru</textarea>
 				    <!-- Subject -->
 					<div class="form-group">
-						<select class="form-control" id="select-form">
+						<select class="form-control" id="select-form" name="subject-option">
 						<option value="Consular">Консульские вопросы (паспорта, справки, визы, легализация)</option>
 						<option value="Culture and Education">Вопросы культуры и образования</option>
 						<option value="Trade and Economic">Торгово-экономические вопросы</option>

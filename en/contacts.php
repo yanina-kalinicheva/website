@@ -159,7 +159,7 @@
                   <textarea name='lang' style="display: none">en</textarea>
 				    <!-- Subject -->
 					<div class="form-group">
-						<select class="form-control" id="select-form">
+						<select class="form-control" id="select-form" name="subject-option">
 						<option value="Consular">Consular</option>
 						<option value="Culture and Education">Culture and Education</option>
 						<option value="Trade and Economic">Trade and Economic</option>
