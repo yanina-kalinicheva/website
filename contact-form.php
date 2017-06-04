@@ -111,7 +111,7 @@ if(isset($_POST['email'])) {
  
     $string_exp1 = "/^[A-Za-z .'-]+$/";
     $string_exp2 = "/^[\x{4e00}-\x{9fa5}]{2,5}$/u"; 
-    $string_exp3 = "/^[а-яА-ЯЁё ]+$/";
+    $string_exp3 = "/^[\x{0400}-\x{04ff}]{2,5}$/u";
  
 	if(!preg_match($string_exp1,$name) && !preg_match($string_exp2,$name) && !preg_match($string_exp3,$name)) {
 		global $lang;
@@ -141,7 +141,7 @@ if(isset($_POST['email'])) {
 
 		} else if ($lang == "ru") {
 
-		  $error_message .= 'Введенное сообщение недействительно.<br />';
+		  $error_message .= 'Введенное сообщение слишком короткое.<br />';
 		}
 	}
  
@@ -185,33 +185,17 @@ if(isset($_POST['email'])) {
 
 	if ($subject == "Other") {
 
-	  mail("yanina.kalinicheva@gmail.com", $email_subject, $email_message, $headers);  
-
-	} elseif ($subject == "Другое") {
-
 	  mail("info@mtc.org.tw", $email_subject, $email_message, $headers);  
-	  
+
 	} elseif ($subject == "Consular") {
 
 	  mail("c@mtc.org.tw", $email_subject, $email_message, $headers);  
 	  
-	} elseif ($subject == "Консульские вопросы (паспорта, справки, визы, легализация)") {
-
-	  mail("c@mtc.org.tw", $email_subject, $email_message, $headers);  
-
 	} elseif ($subject == "Culture and Education") {
 
 	  mail("a@mtc.org.tw", $email_subject, $email_message, $headers);  
 	  
-	} elseif ($subject == "Вопросы культуры и образования") {
-
-	  mail("a@mtc.org.tw", $email_subject, $email_message, $headers);  
-	  
 	} elseif ($subject == "Trade and Economic") {
-
-	  mail("e@mtc.org.tw", $email_subject, $email_message, $headers);  
-	 
-	} elseif ($subject == "Торгово-экономические вопросы") {
 
 	  mail("e@mtc.org.tw", $email_subject, $email_message, $headers);  
 	  
