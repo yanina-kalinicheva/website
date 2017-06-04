@@ -3113,6 +3113,13 @@ fieldset[disabled] .form-control:hover {
   background: #111;
 }
 
+.scroll-menu {
+  // the wrapper acts as the submenus' positioned parent
+  position: relative;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
 /* --------------------------------------------------
 	9.0 Feature
 -------------------------------------------------- */
