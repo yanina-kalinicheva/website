@@ -1,6 +1,6 @@
 <footer class="footer-widgets">
   <div class="container">
-	<div class="row section" style ="padding-top: 50px; padding-bottom: 50px;">
+	<div class="row section" style ="padding-top: 30px; padding-bottom: 30px;">
 	  <!-- Contacts -->
 	  <div class="col-md-6 col-sm-4 mb-sm-100" style="margin-bottom:0px">
 		<div class="widget about-widget">
@@ -29,8 +29,8 @@
 		  <h5 class="header-widget">Twitter Feed</h5>
 		  <ul>
 
-			<a class="twitter-timeline" href="https://twitter.com/mtcintaipei"  data-width="700"  
-			data-height="200" data-theme="dark">Tweets by mtcintaipei</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>				
+			<a class="twitter-timeline" href="https://twitter.com/mtcintaipei"  data-chrome="transparent noborders" data-width="700"  
+			data-height="250" data-theme="dark">Tweets by mtcintaipei</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>				
   
 		  </ul>
 		</div><!-- / .widget -->
