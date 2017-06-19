@@ -47,50 +47,10 @@
                     </li>
                     <!-- / Russia & Taiwan -->
                     <!-- Consular Information -->
-                    <li class="dropdown">
-                        <a style="color:black;" href=<?php echo $langFolder. 'consular.php'; ?> class="dropdown-toggle" data-toggle="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">
-                Consular<br>Information<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <div class="row">
-                                <!-- Russian visa -->
-                                <div class="col-lg-6 mb-sm-30">
-                                    <li class="dropdown-header">Russian visa</li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Important Info</a></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">General rules</a></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Visa fee</a></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Visa application</a></li>
-                                </div>
-                                <!-- Legalization -->
-                                <div class="col-lg-6 mb-sm-30">
-                                    <li class="dropdown-header">Legalization</li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Legalize documents</a></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">How to</a></li>
-                                </div>
-                            </div>
-                            <!-- / .row -->
-                        </ul>
-                        <!-- / .dropdown-menu -->
-                    </li>
+					<li><a style="color:black;" href=<?php echo $langFolder. 'consular.php'; ?>>Consular<br>Information<span class="sr-only"></span></a></li>
                     <!-- / Consular Information -->
                     <!-- Additional Information -->
-                    <li class="dropdown">
-                        <a style="color:black;" href=<?php echo $langFolder. 'info.php'; ?> class="dropdown-toggle" data-toggle="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">
-                Additional<br>Information<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <div class="row">
-                                <!-- Additional Information -->
-                                <div class="col-lg-6 mb-sm-30">
-                                    <li class="dropdown-header">Additional Information</li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Links</a></li>
-                                </div>
-                            </div>
-                            <!-- / .row -->
-                        </ul>
-                        <!-- / .dropdown-menu -->
-                    </li>
+					<li><a style="color:black;" href=<?php echo $langFolder. 'info.php'; ?>>Additional<br>Information<span class="sr-only"></span></a></li>
                     <!-- / Additional Information -->
                     <!-- Contacts -->
                     <li><a style="color:black;" href=<?php echo $langFolder. 'contacts.php'; ?>>Contacts<span class="sr-only"></span></a></li>

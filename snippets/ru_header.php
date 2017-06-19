@@ -47,54 +47,10 @@
                     </li>
                     <!-- / Russia & Taiwan -->
                     <!-- Consular Information -->
-                    <li class="dropdown">
-                        <a style="color:black;" href=<?php echo $langFolder. 'consular.php'; ?> class="dropdown-toggle" data-toggle="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">
-		  Консульские<br>Вопросы<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <div class="row">
-                                <!-- Consular -->
-                                <div class="col-lg-6 mb-sm-30">
-                                    <li class="dropdown-header">Консульский Отдел</li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Нотариат<br><br>документов</a></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">ЗАГС</a></li>
-									<li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Виза в<br><br>Россию</a></li>
-									<li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Тарифы</a></li>
-									<li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Загранпаспорт</a></li>
-									<li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Легализация</a></li>
-									<li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Вопросы<br><br>гражданства</a></li>
-									<li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Консульский<br><br>учет</a></li>
-									<li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Истребование<br><br>документов</a></li>
-                                </div>
-                            </div>
-                            <!-- / .row -->
-                        </ul>
-                        <!-- / .dropdown-menu -->
-                    </li>
+					<li><a style="color:black;" href=<?php echo $langFolder. 'consular.php'; ?>> Консульские<br>вопросы<span class="sr-only"></span></a></li>
                     <!-- / Consular Information -->
                     <!-- Additional Information -->
-                    <li class="dropdown">
-                        <a style="color:black;" href=<?php echo $langFolder. 'info.php'; ?> class="dropdown-toggle"  data-toggle="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">
-		  Полезная<br>Информация<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <div class="row">
-								<!-- Reccomendations -->
-                                <div class="col-lg-6 mb-sm-30">
-                                    <li class="dropdown-header">Рекоммендации</li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Мaграционные<br><br>правила<br><br>Тайваня</a></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Медицинская<br><br>помощь</a></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Правила<br><br>пребывания<br><br>на Тайване</a></li>
-                                    <li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Если Вы<br><br>стали<br><br>жертвой<br><br>преступления</a></li>
-									<li><a href="<?php echo $langFolder. 'text_page.php'; ?>">В случае<br><br>задержания<br><br>или ареста</a></li>
-									<li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Перевод<br><br>денежных<br><br>средств</a></li>
-									<li><a href="<?php echo $langFolder. 'text_page.php'; ?>">Перемещение<br><br>через<br><br>границу<br><br>гробов с<br><br>телами и<br><br>урн с<br><br>прахом<br><br>умерших</a></li>
-                                </div>
-                            </div>
-                            <!-- / .row -->
-                        </ul>
-                        <!-- / .dropdown-menu -->
-                    </li>
+					<li><a style="color:black;" href=<?php echo $langFolder. 'info.php'; ?>>Полезная<br>информация<span class="sr-only"></span></a></li>
                     <!-- / Additional Information -->
                     <!-- Contacts -->
                     <li><a style="color:black;" href=<?php echo $langFolder. 'contacts.php'; ?>>Контакты<span class="sr-only"></span></a></li>
