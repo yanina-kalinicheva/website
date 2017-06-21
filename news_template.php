@@ -105,15 +105,25 @@
     <?php include($my_navigator); ?>
     <!-- / .navbar -->
     <!-- ========== Page Title ========== -->
-	<header class="page-title pt-large pt-light pt-parallax pt-plax-lg-light"
-			style="background-image: url(<cms:show header_image alt="" />); background-size:cover; background-position: 0px -130px; background-repeat:no-repeat;">        <div class="bg-overlay">
+	
+	<header class="page-title pt-light pt-parallax pt-plax-md-light"
+				style="background-image: url(<cms:show header_image alt="" />); background-size:cover; background-position: 0px -130px; background-repeat:no-repeat;">
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
+                <div class="row" style="padding-top:50px">
+				
+					<div class="col-sm-1" style="vertical-align: middle; max-height: 90px; max-width: 90px;">
+					<!-- Logo -->
+					<img style="width: 90%" src="./assets/images/MTC_in_Taipei_logo.gif" alt="Representative Office - Logo">
+					</div>
+				
+			    </div>
+				
+				<div class="row" style="padding-top:20px">
+                    <div class="col-sm-4" style="vertical-align: middle;">
                         <h1><?php echo $my_title; ?></h1>
                         <span class="subheading"></span>
                     </div>
-                    <ol class="col-sm-6 text-right breadcrumb">
+                    <ol class="col-sm-7 text-right breadcrumb">
                         <li><a href="<?php echo $lang; ?>/main.php"><?php echo $main_link; ?></a></li>
                         <li><a href="<?php echo $lang; ?>/news.php"><?php echo $news_link; ?></a></li>
                         <li class="active">
@@ -122,8 +132,8 @@
                     </ol>
                 </div>
             </div>
-        </div>
     </header>
+	
     <!-- ========== Single Blog Post ========== -->
     <div id="blog" class="section container blog-classic">
         <div class="row">

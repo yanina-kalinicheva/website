@@ -56,26 +56,37 @@
 		<?php include('../couch/snippets/ch_header.php'); ?>
 		
         <!-- ========== Page Title ========== -->
-		<header class="page-title pt-large pt-light pt-parallax pt-plax-lg-light"
+
+		<header class="page-title pt-light pt-parallax pt-plax-md-light"
 				style="background-image: url(<cms:show header_image alt="" />); background-size:cover; background-position: 0px -130px; background-repeat:no-repeat;">
-            <div class="bg-overlay">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6">
-						    <h1 style="font-size:210%;">新聞</h1>
-                            <span class="subheading"><cms:show greetings /></span>
-                        </div>
-                        <ol class="col-sm-6 text-right breadcrumb">
-							<li><a style="font-size:130%;" href="main.php">主頁</a></li>
-							<li style="font-size:130%;" class="active"><a href="news.php">新聞</a></li>
-                            <li class="active">
-                                <cms:show k_page_title />
-                            </li>
-                        </ol>
-                    </div>
+          <div class="container">
+              <div class="row" style="padding-top:50px">
+
+				<div class="col-sm-1" style="vertical-align: middle; max-height: 90px; max-width: 90px;">
+                  <!-- Logo -->
+				<img style="width: 90%" src="../assets/images/MTC_in_Taipei_logo.gif" alt="Representative Office - Logo">
                 </div>
+				
+			  </div>
+			  <div class="row" style="padding-top:20px">
+                <div class="col-sm-4" style="vertical-align: middle;">
+                  <h1>新聞</h1>
+                  <span class="subheading"><cms:show greetings /></span>
+                </div>
+                <ol class="col-sm-7 text-right breadcrumb">
+                  <li><a href="main.php">主頁</a></li>
+                  <li class="active">新聞</li>
+				  <li class="active">
+                      <cms:show k_page_title />
+                  </li>
+                </ol>
+
+              </div>
             </div>
         </header>
+		
+		
+		
         <!-- include news list view -->
 		<?php include('../couch/snippets/news_list.php'); ?>
         <!-- / include news list view -->

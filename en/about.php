@@ -68,22 +68,24 @@
 
         <!-- ========== Page Title ========== -->
 		
-		<header class="page-title pt-large pt-light pt-parallax pt-plax-lg-light"
+		<header class="page-title pt-light pt-parallax pt-plax-md-light"
 				style="background-image: url(<cms:show header_image alt="" />); background-size:cover; background-position: 0px -130px; background-repeat:no-repeat;">
           <div class="container">
-              <div class="row">
+              <div class="row" style="padding-top:50px">
 
-				<div class="col-sm-1" style="padding-right: 1px; padding-left: 1px; vertical-align: middle;  max-height: 56px; max-width: 59px;">
+				<div class="col-sm-1" style="vertical-align: middle; max-height: 90px; max-width: 90px;">
                   <!-- Logo -->
 				<img style="width: 90%" src="../assets/images/MTC_in_Taipei_logo.gif" alt="Representative Office - Logo">
                 </div>
 				
+			  </div>
+			  <div class="row" style="padding-top:20px">
                 <div class="col-sm-4" style="vertical-align: middle;">
                   <h1>About</h1>
                   <span class="subheading"><cms:show greetings /></span>
                 </div>
                 <ol class="col-sm-7 text-right breadcrumb">
-                  <li><a href="../mtc_main.html">Home</a></li>
+                  <li><a href="main.php">Home</a></li>
                   <li class="active">About</li>
                 </ol>
 
@@ -110,7 +112,7 @@
                   <h2 class="post-title"><cms:show article_title /></h2>
                   
 
-                  <div class="blog-post-content">
+                  <div class="blog-post-content" style="color:black;">
 					<cms:show article_content />
                   </div>
                   
